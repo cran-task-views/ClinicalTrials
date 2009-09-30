@@ -1,0 +1,206 @@
+<CRANTaskView>
+
+<name>ClinicalTrials</name>
+<topic>Design, Monitoring, and Analysis of Clinical Trials</topic>
+<maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang</maintainer>
+<version>2009-09-28</version>
+
+<info>
+
+<p>This task view gathers information on specific R packages for design,
+monitoring and analysis of data from  clinical trials. It focuses on including
+packages for clinical trial design and monitoring in general plus data  analysis
+packages for a specific types of design. Also, it gives a brief introduction to
+important packages for  analyzing clinical trial data. Please refer to task
+views <view>ExperimentalDesign</view>, <view>Survival</view>,
+<view>Pharmacokinetics</view> for more details on these topics. Please feel free
+to e-mail me regarding new packages or major package updates.</p>
+
+<p><strong>Design and Monitoring</strong></p>
+
+<ul>
+
+<li><pkg>Blockrand</pkg> creates randomizations for block random clinical
+trials. It can also produce a PDF file of randomization cards.</li>
+
+<li><pkg>Experiment</pkg> contains tools for clinical experiments, e.g., a
+randomization tool, and it provides a few special analysis options for clinical
+trials.</li>
+
+<li><pkg>GroupSeq</pkg> performs computations related to group sequential
+designs via the alpha spending approach, i.e., interim analyses need not be
+equally spaced, and their number need not be specified in advance.</li>
+
+<li><pkg>gsDesign</pkg> derives group sequential designs and describes their
+properties.</li> 
+
+<li><code>ldBand</code> from <pkg>Hmisc</pkg> computes and plots group
+sequential stopping boundaries from the Lan-DeMets method with a variety of
+a-spending functions using the ld98 program from the Department of
+Biostatistics, University of Wisconsin written by DM Reboussin, DL DeMets, KM
+Kim, and KKG Lan.</li> 
+
+<li><pkg>ldbounds</pkg> uses Lan-DeMets Method for group sequential trial; its
+functions calculate bounds and probabilities of a group sequential trial.</li> 
+
+<li><pkg>PwrGSD</pkg> is a set of tools to compute power in a group sequential
+design.</li>
+
+<li><pkg>seqmon</pkg> is computes the probability of crossing sequential
+efficacy and futility boundaries in a clinical trial. It implements the
+Armitage-McPherson and Rowe Algorithm using the method described in Schoenfeld
+(2001).</li>
+
+</ul>
+
+<p><strong>Analysis for Specific Design</strong></p>
+
+<ul>
+
+<li>Package <pkg>clinfun</pkg> has functions for both design and analysis of
+clinical trials. For phase II trials, it has functions to calculate sample size,
+effect size, and power based on Fisher's exact test, the operating
+characteristics of a two-stage boundary, Optimal and Minimax 2-stage Phase II
+designs given by Richard Simon, the exact 1-stage Phase II design and can
+compute a stopping rule and its operating characteristics for toxicity
+monitoring based repeated significance testing. For phase III trials, it can
+calculate sample size for group sequential designs.</li> 
+
+<li><pkg>bifactorial</pkg> makes global and multiple inferences for given bi-
+and trifactorial clinical trial designs using bootstrap methods and a classical
+approach.</li>
+
+<li>The package <pkg>ClinicalRobustPriors</pkg> can be employed for computing
+distributions (prior, likelihood, and posterior) and moments of robust models:
+Cauchy/Binomial, Cauchy/Normal and Berger/Normal. Furthermore, the assessment of
+the hyperparameters and the posterior analysis can be processed.</li>
+
+<li><pkg>MChtest</pkg> performs Monte Carlo hypothesis tests. It allows a couple
+of different sequential stopping boundaries (a truncated sequential probability
+ratio test boundary and a boundary proposed by Besag and Clifford (1991). It
+gives valid p-values and confidence intervals on p-values.</li> 
+
+<li><pkg>speff2trial</pkg>, the package performs estimation and testing of the
+treatment effect in a 2-group randomized clinical trial with a quantitative or
+dichotomous endpoint.</li>
+ 
+</ul>
+
+<p><strong>Analysis in General</strong></p>
+
+<ul>
+
+<li>Base R, especially the stats package, has a lot of functionality useful
+for design and analysis of clinical trials. For example, <code>chisq.test</code>,
+<code>prop.test</code>, <code>binom.test</code>, <code>t.test</code>, <code>wilcox.test</code>, 
+<code>kruskal.test</code>, <code>mcnemar.test</code>, <code>cor.test</code>,
+<code>power.t.test</code>, <code>power.prop.test</code>, <code>power.anova.test</code>, 
+<code>lm</code>, <code>glm</code>, <code>nls</code>, <code>anova</code> (and its
+<code>lm</code> and <code>glm</code> methods) among many others.</li>
+
+<li><pkg>asypow</pkg> has a set of routines for calculating power and related
+quantities utilizing asymptotic likelihood ratio methods.</li>
+
+<li><pkg>binomSamSize</pkg> is a suite of functions for computing confidence
+intervals and necessary sample sizes for the success probability parameter
+Bernoulli distribution under simple random sampling or under pooled
+sampling.</li>
+
+<li><pkg>coin</pkg> offers conditional inference procedures for the general
+independence problem including two-sample, K-sample (non-parametric ANOVA),
+correlation, censored, ordered and multivariate problems.</li>
+
+<li><pkg>epibasix</pkg> has functions such as <code>diffdetect</code>,
+<code>n4means</code> for continuous outcome and <code>n4props</code> and
+functions for matched pairs analysis in randomized trials.</li>
+
+<li><pkg>epicalc</pkg> provides a set of functions for sample size calculations,
+such as <code>n.for.2means</code>, <code>n.for.2p</code>,
+<code>n.for.equi.2p</code>, <code>n.for.noninferior.2p</code>,
+<code>n.for.cluster.2p</code>, etc.</li>
+
+<li><code>ae.dotplot</code> from <pkg>HH</pkg> shows a two-panel display
+of the most frequently occurring adverse events
+in the active arm of a clinical study.</li>
+
+<li><pkg>Hmisc</pkg>The Hmisc library contains many miscellaneous functions 
+including functions for computing sample size and power, translating
+SAS datasets into S, imputing missing values, advanced table making, variable clustering, character
+string manipulation, conversion of S objects to LaTeX code, recoding variables, and bootstrap repeated
+measures analysis.</li>
+
+<li><pkg>multcomp</pkg> covers simultaneous tests and confidence intervals for
+general linear hypotheses in parametric models, including linear, generalized
+linear, linear mixed effects, and survival models.</li>
+
+<li><pkg>survival</pkg> contains descriptive statistics, two-sample tests,
+parametric accelerated failure models, Cox model. Delayed entry (truncation)
+allowed for all models; interval censoring for parametric models. Case-cohort
+designs.</li>
+
+<li><pkg>ssanv</pkg> is a set of functions to calculate sample size for
+two-sample difference in means tests. Does adjustments for either nonadherence
+or variability that comes from using data to estimate parameters.</li>
+
+</ul>
+
+<p><strong>Meta-Analysis</strong></p>
+<ul>
+
+<li><pkg>copas</pkg> is a package for statistical methods to model and adjust
+for bias in meta-analysis</li>
+
+<li><pkg>meta</pkg> is for fixed and random effects meta-analysis. It has
+Functions for tests of bias, forest and funnel plot.</li>
+
+<li><pkg>metafor</pkg> consists of a collection of functions for conducting
+meta-analyses. Fixed- and random-effects models (with and without
+moderators) can be fitted via the general linear (mixed-effects) model. For 2x2
+table data, the Mantel-Haenszel and Peto's method are also implemented.</li>
+
+<li><pkg>rmeta</pkg> has functions for simple fixed and random effects
+meta-analysis for two-sample comparisons and cumulative meta-analyses. Draws
+standard summary plots, funnel plots, and computes summaries and tests for
+association and heterogeneity.</li>
+
+</ul>
+
+</info>
+
+<packagelist>
+  <pkg>asypow</pkg>
+  <pkg priority="core">bifactorial</pkg> 
+  <pkg>binomSamSize</pkg>
+  <pkg priority="core">blockrand</pkg>
+  <pkg priority="core">clinfun</pkg>
+  <pkg priority="core">ClinicalRobustPriors</pkg>
+  <pkg>coin</pkg>
+  <pkg>copas</pkg>
+  <pkg>epibasix</pkg>
+  <pkg>epicalc</pkg>
+  <pkg priority="core">experiment</pkg>
+  <pkg priority="core">GroupSeq</pkg>
+  <pkg priority="core">gsDesign</pkg>
+  <pkg>HH</pkg>
+  <pkg priority="core">Hmisc</pkg>
+  <pkg priority="core">ldbounds</pkg>
+  <pkg priority="core">MChtest</pkg>
+  <pkg>meta</pkg>
+  <pkg>metafor</pkg>
+  <pkg>multcomp</pkg>
+  <pkg priority="core">PwrGSD</pkg>
+  <pkg>rmeta</pkg>
+  <pkg priority="core">seqmon</pkg>
+  <pkg priority="core">speff2trial</pkg>
+  <pkg>ssanv</pkg>
+  <pkg priority="core">survival</pkg>
+</packagelist>
+
+<links>
+  <view>ExperimentalDesign</view>
+  <view>Survival</view>
+  <view>Pharmacokinetics</view>
+  <a href="http://www.R-project.org/doc/R-FDA.pdf">Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)</a>
+</links>
+
+</CRANTaskView>
