@@ -1,16 +1,16 @@
 <CRANTaskView>
 
 <name>ClinicalTrials</name>
-<topic>Design, Monitoring, and Analysis of Clinical Trials</topic>
+<topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang</maintainer>
-<version>2009-09-28</version>
+<version>2010-07-07</version>
 
 <info>
 
 <p>This task view gathers information on specific R packages for design,
 monitoring and analysis of data from  clinical trials. It focuses on including
 packages for clinical trial design and monitoring in general plus data  analysis
-packages for a specific types of design. Also, it gives a brief introduction to
+packages for a specific type of design. Also, it gives a brief introduction to
 important packages for  analyzing clinical trial data. Please refer to task
 views <view>ExperimentalDesign</view>, <view>Survival</view>,
 <view>Pharmacokinetics</view> for more details on these topics. Please feel free
@@ -53,7 +53,7 @@ Armitage-McPherson and Rowe Algorithm using the method described in Schoenfeld
 
 </ul>
 
-<p><strong>Analysis for Specific Design</strong></p>
+<p><strong>Design and Analysis</strong></p>
 
 <ul>
 
@@ -65,6 +65,18 @@ designs given by Richard Simon, the exact 1-stage Phase II design and can
 compute a stopping rule and its operating characteristics for toxicity
 monitoring based repeated significance testing. For phase III trials, it can
 calculate sample size for group sequential designs.</li> 
+
+<li>Package <pkg>DoseFinding</pkg> provides functions for the design and analysis 
+of dose-finding experiments (for example pharmaceutical Phase II clinical trials). 
+It provides functions for: multiple contrast tests, fitting non-linear dose-response models, 
+calculating optimal designs and an implementation of the MCPMod methodology. 
+Currently only normally distributed homoscedastic endpoints are supported.</li> 
+
+</ul>
+
+<p><strong>Analysis for Specific Designs</strong></p>
+
+<ul>
 
 <li><pkg>bifactorial</pkg> makes global and multiple inferences for given bi-
 and trifactorial clinical trial designs using bootstrap methods and a classical
@@ -123,8 +135,8 @@ such as <code>n.for.2means</code>, <code>n.for.2p</code>,
 of the most frequently occurring adverse events
 in the active arm of a clinical study.</li>
 
-<li><pkg>Hmisc</pkg>The Hmisc library contains many miscellaneous functions 
-including functions for computing sample size and power, translating
+<li>The <pkg>Hmisc</pkg> package contains around 200 miscellaneous functions useful for such things as data analysis,
+high–level graphics, utility operations, functions for computing sample size and power, translating
 SAS datasets into S, imputing missing values, advanced table making, variable clustering, character
 string manipulation, conversion of S objects to LaTeX code, recoding variables, and bootstrap repeated
 measures analysis.</li>
@@ -176,6 +188,7 @@ association and heterogeneity.</li>
   <pkg priority="core">ClinicalRobustPriors</pkg>
   <pkg>coin</pkg>
   <pkg>copas</pkg>
+  <pkg>DoseFinding</pkg>
   <pkg>epibasix</pkg>
   <pkg>epicalc</pkg>
   <pkg priority="core">experiment</pkg>
