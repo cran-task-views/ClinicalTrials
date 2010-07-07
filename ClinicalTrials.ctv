@@ -69,7 +69,7 @@ calculate sample size for group sequential designs.</li>
 <li>Package <pkg>DoseFinding</pkg> provides functions for the design and analysis 
 of dose-finding experiments (for example pharmaceutical Phase II clinical trials). 
 It provides functions for: multiple contrast tests, fitting non-linear dose-response models, 
-calculating optimal designs and an implementation of the MCPMod methodology. 
+calculating optimal designs and an implementation of the <pkg>MCPMod</pkg> methodology. 
 Currently only normally distributed homoscedastic endpoints are supported.</li> 
 
 </ul>
@@ -136,7 +136,7 @@ of the most frequently occurring adverse events
 in the active arm of a clinical study.</li>
 
 <li>The <pkg>Hmisc</pkg> package contains around 200 miscellaneous functions useful for such things as data analysis,
-high–level graphics, utility operations, functions for computing sample size and power, translating
+high-level graphics, utility operations, functions for computing sample size and power, translating
 SAS datasets into S, imputing missing values, advanced table making, variable clustering, character
 string manipulation, conversion of S objects to LaTeX code, recoding variables, and bootstrap repeated
 measures analysis.</li>
@@ -198,6 +198,7 @@ association and heterogeneity.</li>
   <pkg priority="core">Hmisc</pkg>
   <pkg priority="core">ldbounds</pkg>
   <pkg priority="core">MChtest</pkg>
+  <pkg>MCPMod</pkg>
   <pkg>meta</pkg>
   <pkg>metafor</pkg>
   <pkg>multcomp</pkg>
