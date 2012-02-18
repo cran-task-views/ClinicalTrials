@@ -52,7 +52,7 @@ functions calculate bounds and probabilities of a group sequential trial.</li>
 <li><pkg>longpower</pkg> The longpower package contains functions for computing power and sample size for linear models of longitudinal data based on the formula due to Liu and Liang (1997) and Diggle et al (2002). Either formula is expressed in terms of marginal model or Generalized Estimating Equations (GEE) parameters. This package contains functions which translate pilot mixed effect model parameters (e.g. random intercept and/or slope) into marginal model parameters so that the formulas of Diggle et al or Liu and Liang formula can be applied to produce sample size calculations for two sample longitudinal designs assuming known variance.</li>
 <li><pkg>PIPS</pkg> is a set of tools to compute power in a group sequential
 design.</li>
-<li><pkg>powerTOST</pkg> contains functions to calculate power and sample size for various study designs used for bioequivalence studies. See function known.designs() for study designs covered. Moreover the package contains functions for power and sample size based on 'expected' power in case of uncertain (estimated) variability. Added are functions for the power and sample size for the ratio of two means with normally distributed data on the original scale (based on Fieller's confidence ('fiducial') interval).</li>
+<li><pkg>PowerTOST</pkg> contains functions to calculate power and sample size for various study designs used for bioequivalence studies. See function known.designs() for study designs covered. Moreover the package contains functions for power and sample size based on 'expected' power in case of uncertain (estimated) variability. Added are functions for the power and sample size for the ratio of two means with normally distributed data on the original scale (based on Fieller's confidence ('fiducial') interval).</li>
 <li><pkg>pwr</pkg> has power analysis functions along the lines of Cohen (1988).</li>
 <li><pkg>PwrGSD</pkg> is a set of tools to compute power in a group sequential
 design.</li>
@@ -199,61 +199,56 @@ association and heterogeneity.</li>
 </info>
 
 <packagelist>
-<pkg priority="core">adaptTest</pkg>
+  <pkg priority="core">adaptTest</pkg>
   <pkg>AGSDest</pkg>
-<pkg priority="core">asd</pkg>
-
+  <pkg priority="core">asd</pkg>
   <pkg>asypow</pkg>
   <pkg priority="core">bcrm</pkg> 
   <pkg priority="core">bifactorial</pkg> 
   <pkg>binomSamSize</pkg>
   <pkg priority="core">blockrand</pkg>
-<pkg>conf.design</pkg>
-
   <pkg priority="core">clinfun</pkg>
   <pkg priority="core">ClinicalRobustPriors</pkg>
-<pkg>clinsig</pkg>
+  <pkg>clinsig</pkg>
   <pkg>coin</pkg>
+  <pkg>conf.design</pkg>
   <pkg>copas</pkg>
-<pkg priority="core">CRTSize</pkg>
-<pkg priority="core">crossdes</pkg>
-<pkg priority="core">dfcrm</pkg>
+  <pkg priority="core">CRTSize</pkg>
+  <pkg priority="core">crossdes</pkg>
+  <pkg priority="core">dfcrm</pkg>
   <pkg>DoseFinding</pkg>
   <pkg>epibasix</pkg>
   <pkg>epicalc</pkg>
   <pkg priority="core">experiment</pkg>
-<pkg>FrF2</pkg>
+  <pkg>FrF2</pkg>
   <pkg priority="core">GroupSeq</pkg>
   <pkg priority="core">gsDesign</pkg>
   <pkg>HH</pkg>
   <pkg priority="core">Hmisc</pkg>
   <pkg priority="core">ldbounds</pkg>
-<pkg>longpower</pkg>
-
+  <pkg>longpower</pkg>
   <pkg priority="core">MChtest</pkg>
   <pkg>MCPMod</pkg>
   <pkg>medAdherence</pkg>
   <pkg>meta</pkg>
   <pkg>metafor</pkg>
-<pkg priority="core">MSToolkit</pkg>
+  <pkg priority="core">MSToolkit</pkg>
   <pkg>multcomp</pkg>
   <pkg>nppbib</pkg>
-<pkg priority="core">PIPS</pkg>
-
-<pkg priority="core">powerTOST</pkg>
-<pkg priority="core">pwr</pkg>
+  <pkg priority="core">PIPS</pkg>
+  <pkg priority="core">PowerTOST</pkg>
+  <pkg priority="core">pwr</pkg>
   <pkg priority="core">PwrGSD</pkg>
-<pkg priority="core">qtlDesign</pkg>
+  <pkg priority="core">qtlDesign</pkg>
   <pkg>rmeta</pkg>
-<pkg priority="core">samplesize</pkg>
+  <pkg priority="core">samplesize</pkg>
   <pkg priority="core">seqmon</pkg>
   <pkg priority="core">speff2trial</pkg>
   <pkg>ssanv</pkg>
   <pkg priority="core">survival</pkg>
-<pkg>tdm</pkg>
-<pkg priority="core">TEQR</pkg>
-<pkg>ThreeGroups</pkg>
-
+  <pkg>tdm</pkg>
+  <pkg priority="core">TEQR</pkg>
+  <pkg>ThreeGroups</pkg>
 </packagelist>
 
 <links>
