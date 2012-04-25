@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang</maintainer>
-<version>2012-02-21</version>
+<version>2012-04-25</version>
 
 <info>
 
@@ -133,11 +133,6 @@ for design and analysis of clinical trials. For example, <code>chisq.test</code>
 <li><pkg>asypow</pkg> has a set of routines for calculating power and related
 quantities utilizing asymptotic likelihood ratio methods.</li>
 
-<li><pkg>binomSamSize</pkg> is a suite of functions for computing confidence
-intervals and necessary sample sizes for the success probability parameter
-Bernoulli distribution under simple random sampling or under pooled
-sampling.</li>
-
 <li><pkg>coin</pkg> offers conditional inference procedures for the general
 independence problem including two-sample, K-sample (non-parametric ANOVA),
 correlation, censored, ordered and multivariate problems.</li>
@@ -206,7 +201,6 @@ association and heterogeneity.</li>
   <pkg>asypow</pkg>
   <pkg priority="core">bcrm</pkg> 
   <pkg priority="core">bifactorial</pkg> 
-  <pkg>binomSamSize</pkg>
   <pkg priority="core">blockrand</pkg>
   <pkg priority="core">clinfun</pkg>
   <pkg priority="core">ClinicalRobustPriors</pkg>
