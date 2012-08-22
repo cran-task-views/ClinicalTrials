@@ -2,14 +2,14 @@
 
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
-<maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang</maintainer>
-<version>2012-04-25</version>
+<maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
+<version>2012-08-22</version>
 
 <info>
 
 <p>This task view gathers information on specific R packages for design,
 monitoring and analysis of data from  clinical trials. It focuses on including
-packages for clinical trial design and monitoring in general plus data  analysis
+packages for clinical trial design and monitoring in general plus data analysis
 packages for a specific type of design. Also, it gives a brief introduction to
 important packages for  analyzing clinical trial data. Please refer to task
 views <view>ExperimentalDesign</view>, <view>Survival</view>,
@@ -19,10 +19,12 @@ to e-mail me regarding new packages or major package updates.</p>
 <p><strong>Design and Monitoring</strong></p>
 
 <ul>
+
+<li><pkg>TrialSize</pkg> This package has more than 80 functions from the book <i>Sample Size Calculations in Clinical Research</i> (Chow &amp; Wang &amp; Shao, 2007, 2nd ed., Chapman &amp;Hall/CRC). </li>
 <li><pkg>asd</pkg> This Package runs simulations for adaptive seamless designs using early outcomes for treatment selection.</li>
 <li><pkg>bcrm</pkg> This package implements a wide variety of one and two-parameter Bayesian CRM designs. The program can run interactively, allowing the user to enter outcomes after each cohort has been recruited, or via simulation to assess operating characteristics.</li>
 
-<li><pkg>Blockrand</pkg> creates randomizations for block random clinical
+<li><pkg>blockrand</pkg> creates randomizations for block random clinical
 trials. It can also produce a PDF file of randomization cards.</li>
 <li><pkg>conf.design</pkg> This small library contains a series of simple tools for constructing and manipulating confounded and fractional factorial designs.</li>
 <li><pkg>crossdes</pkg> contains functions for the construction and randomization of balanced carryover balanced designs. Contains functions to check given designs for balance. Also contains functions for simulation studies on the validity of two randomization procedures.</li>
@@ -30,7 +32,7 @@ trials. It can also produce a PDF file of randomization cards.</li>
 <li><pkg>dfcrm</pkg> This package provides functions to run the CRM and
 TITE-CRM in phase I trials and calibration tools for trial planning purposes.</li>
 
-<li><pkg>Experiment</pkg> contains tools for clinical experiments, e.g., a
+<li><pkg>experiment</pkg> contains tools for clinical experiments, e.g., a
 randomization tool, and it provides a few special analysis options for clinical
 trials.</li>
 <li><pkg>FrF2</pkg> This package creates regular and non-regular Fractional Factorial designs. Furthermore, analysis tools for Fractional Factorial designs with 2-level factors are offered (main effects and interaction plots for all factors simultaneously, cube plot for looking at the simultaneous effects of three factors, full or half normal plot, alias structure in a more readable format than with the built-in function alias). The package is currently subject to intensive development. While much of the intended functionality is already available, some changes and improvements are still to be expected.</li>
@@ -185,6 +187,8 @@ meta-analyses. Fixed- and random-effects models (with and without
 moderators) can be fitted via the general linear (mixed-effects) model. For 2x2
 table data, the Mantel-Haenszel and Peto's method are also implemented.</li>
 
+<li><pkg>metaLik</pkg> Likelihood inference in meta-analysis and meta-regression models.</li> 
+
 <li><pkg>rmeta</pkg> has functions for simple fixed and random effects
 meta-analysis for two-sample comparisons and cumulative meta-analyses. Draws
 standard summary plots, funnel plots, and computes summaries and tests for
@@ -227,6 +231,7 @@ association and heterogeneity.</li>
   <pkg>medAdherence</pkg>
   <pkg>meta</pkg>
   <pkg>metafor</pkg>
+  <pkg>metaLik</pkg>
   <pkg priority="core">MSToolkit</pkg>
   <pkg>multcomp</pkg>
   <pkg>nppbib</pkg>
@@ -244,6 +249,7 @@ association and heterogeneity.</li>
   <pkg>tdm</pkg>
   <pkg priority="core">TEQR</pkg>
   <pkg>ThreeGroups</pkg>
+  <pkg priority="core">TrialSize</pkg>
 </packagelist>
 
 <links>
@@ -254,3 +260,4 @@ association and heterogeneity.</li>
 </links>
 
 </CRANTaskView>
+
