@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2012-09-13</version>
+<version>2012-09-27</version>
 
 <info>
 
@@ -26,7 +26,7 @@ to e-mail me regarding new packages or major package updates.</p>
 
 <li><pkg>blockrand</pkg> creates randomizations for block random clinical
 trials. It can also produce a PDF file of randomization cards.</li>
-<li><pkg>conf.design</pkg> This small library contains a series of simple tools for constructing and manipulating confounded and fractional factorial designs.</li>
+<li><pkg>conf.design</pkg> This small package contains a series of simple tools for constructing and manipulating confounded and fractional factorial designs.</li>
 <li><pkg>CRTSize</pkg> This package contains basic tools for the purpose of sample size estimation in cluster (group) randomized trials. The package contains traditional power-based methods, empirical smoothing (Rotondi and Donner, 2009), and updated meta-analysis techniques (Rotondi and Donner, 2011).</li>
 <li><pkg>dfcrm</pkg> This package provides functions to run the CRM and
 TITE-CRM in phase I trials and calibration tools for trial planning purposes.</li>
@@ -70,7 +70,7 @@ Armitage-McPherson and Rowe Algorithm using the method described in Schoenfeld
 <p><strong>Design and Analysis</strong></p>
 
 <ul>
-<li>Package <pkg>AGSDest</pkg> This library provides tools and functions for parameter estimation in adaptive group sequential trials.</li>
+<li>Package <pkg>AGSDest</pkg> This package provides tools and functions for parameter estimation in adaptive group sequential trials.</li>
 <li>Package <pkg>clinfun</pkg> has functions for both design and analysis of
 clinical trials. For phase II trials, it has functions to calculate sample size,
 effect size, and power based on Fisher's exact test, the operating
@@ -86,6 +86,7 @@ It provides functions for: multiple contrast tests, fitting non-linear dose-resp
 calculating optimal designs and an implementation of the <pkg>MCPMod</pkg> methodology. 
 Currently only normally distributed homoscedastic endpoints are supported.</li> 
 <li><pkg>MCPMod</pkg> This package implements a methodology for the design and analysis of dose-response studies that combines aspects of multiple comparison procedures and modeling approaches (Bretz, Pinheiro and Branson, 2005, Biometrics 61, 738-748). The package provides tools for the analysis of dose finding trials as well as a variety of tools necessary to plan a trial to be conducted with the MCPMod methodology. </li>
+<li><pkg>MSToolkit</pkg> This package is for evaluating clinical trial design and analysis operating characteristics through simulation.</li>
 <li>Package <pkg>TEQR</pkg> The target equivalence range (TEQR) design is a frequentist implementation of the modified toxicity probability interval (mTPI) design and a competitor to the standard 3+3 design (3+3). The 3+3 is the work horse design in Phase I. It is good at determining if a safe dose exits, but provides poor accuracy and precision in estimating the level of toxicity at the maximum tolerated dose (MTD). The TEQR is better than the 3+3 when compared on: 1) the number of times the dose at or nearest the target toxicity level was selected as the MTD, 2) the number of subjects assigned to doses levels, at or nearest the MTD, and 3) the overall trial DLT rate. TEQR more accurately and more precisely estimates the rate of toxicity at the MTD because a larger number of subjects are studied at the MTD dose. The TEQR on average uses fewer subjects and provide reasonably comparable results to the continual reassessment method (CRM) in the number of times the dose at or nearest the target toxicity level was selected as the MTD and the number of subjects assigned doses, at, or nearest the target and in overall DLT rate.</li> 
 </ul>
 
@@ -112,7 +113,7 @@ gives valid p-values and confidence intervals on p-values.</li>
 <li><pkg>speff2trial</pkg>, the package performs estimation and testing of the
 treatment effect in a 2-group randomized clinical trial with a quantitative or
 dichotomous endpoint.</li>
-<li><pkg>tdm</pkg> This library can be used to estimate individual pharmacokinetic parameters with one or more drug serum/plasma concentrations obtained from a single subject or multiple subjects using OpenBUGS (Bayesian inference Using Gibbs Sampling) interfaced through BRugs. Besides, it also can calculate a suggested dose with the target drug concentration (C ->D) or calculate a predicted drug concentration with a given dose (D -> C).</li>
+<li><pkg>tdm</pkg> This package can be used to estimate individual pharmacokinetic parameters with one or more drug serum/plasma concentrations obtained from a single subject or multiple subjects using OpenBUGS (Bayesian inference Using Gibbs Sampling) interfaced through BRugs. Besides, it also can calculate a suggested dose with the target drug concentration (C ->D) or calculate a predicted drug concentration with a given dose (D -> C).</li>
 
  <li><pkg>ThreeGroups</pkg> This package implements the Maximum Likelihood estimator for three-group designs proposed by Gerber, Green, Kaplan, and Kern (2010).</li>
 
@@ -229,6 +230,7 @@ association and heterogeneity.</li>
   <pkg>meta</pkg>
   <pkg>metafor</pkg>
   <pkg>metaLik</pkg>
+  <pkg priority="core">MSToolkit</pkg>
   <pkg>multcomp</pkg>
   <pkg>nppbib</pkg>
   <pkg priority="core">PIPS</pkg>
