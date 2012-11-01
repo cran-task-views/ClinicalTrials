@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2012-09-27</version>
+<version>2012-11-01</version>
 
 <info>
 
@@ -114,8 +114,6 @@ gives valid p-values and confidence intervals on p-values.</li>
 treatment effect in a 2-group randomized clinical trial with a quantitative or
 dichotomous endpoint.</li>
 <li><pkg>tdm</pkg> This package can be used to estimate individual pharmacokinetic parameters with one or more drug serum/plasma concentrations obtained from a single subject or multiple subjects using OpenBUGS (Bayesian inference Using Gibbs Sampling) interfaced through BRugs. Besides, it also can calculate a suggested dose with the target drug concentration (C ->D) or calculate a predicted drug concentration with a given dose (D -> C).</li>
-
- <li><pkg>ThreeGroups</pkg> This package implements the Maximum Likelihood estimator for three-group designs proposed by Gerber, Green, Kaplan, and Kern (2010).</li>
 
 </ul>
 
@@ -246,7 +244,6 @@ association and heterogeneity.</li>
   <pkg priority="core">survival</pkg>
   <pkg>tdm</pkg>
   <pkg priority="core">TEQR</pkg>
-  <pkg>ThreeGroups</pkg>
   <pkg priority="core">TrialSize</pkg>
 </packagelist>
 
