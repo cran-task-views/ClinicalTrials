@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2012-11-01</version>
+<version>2013-01-29</version>
 
 <info>
 
@@ -205,6 +205,7 @@ association and heterogeneity.</li>
   <pkg>coin</pkg>
   <pkg>conf.design</pkg>
   <pkg>copas</pkg>
+  <pkg>CRM</pkg>
   <pkg priority="core">CRTSize</pkg>
   <pkg priority="core">dfcrm</pkg>
   <pkg>DoseFinding</pkg>
