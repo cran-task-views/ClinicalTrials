@@ -86,7 +86,6 @@ It provides functions for: multiple contrast tests, fitting non-linear dose-resp
 calculating optimal designs and an implementation of the <pkg>MCPMod</pkg> methodology. 
 Currently only normally distributed homoscedastic endpoints are supported.</li> 
 <li><pkg>MCPMod</pkg> This package implements a methodology for the design and analysis of dose-response studies that combines aspects of multiple comparison procedures and modeling approaches (Bretz, Pinheiro and Branson, 2005, Biometrics 61, 738-748). The package provides tools for the analysis of dose finding trials as well as a variety of tools necessary to plan a trial to be conducted with the MCPMod methodology. </li>
-<li><pkg>MSToolkit</pkg> This package is for evaluating clinical trial design and analysis operating characteristics through simulation.</li>
 <li>Package <pkg>TEQR</pkg> The target equivalence range (TEQR) design is a frequentist implementation of the modified toxicity probability interval (mTPI) design and a competitor to the standard 3+3 design (3+3). The 3+3 is the work horse design in Phase I. It is good at determining if a safe dose exits, but provides poor accuracy and precision in estimating the level of toxicity at the maximum tolerated dose (MTD). The TEQR is better than the 3+3 when compared on: 1) the number of times the dose at or nearest the target toxicity level was selected as the MTD, 2) the number of subjects assigned to doses levels, at or nearest the MTD, and 3) the overall trial DLT rate. TEQR more accurately and more precisely estimates the rate of toxicity at the MTD because a larger number of subjects are studied at the MTD dose. The TEQR on average uses fewer subjects and provide reasonably comparable results to the continual reassessment method (CRM) in the number of times the dose at or nearest the target toxicity level was selected as the MTD and the number of subjects assigned doses, at, or nearest the target and in overall DLT rate.</li> 
 </ul>
 
@@ -224,7 +223,6 @@ association and heterogeneity.</li>
   <pkg>meta</pkg>
   <pkg>metafor</pkg>
   <pkg>metaLik</pkg>
-  <pkg priority="core">MSToolkit</pkg>
   <pkg>multcomp</pkg>
   <pkg>nppbib</pkg>
   <pkg priority="core">PIPS</pkg>
