@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2013-01-29</version>
+<version>2013-03-20</version>
 
 <info>
 
@@ -135,6 +135,10 @@ quantities utilizing asymptotic likelihood ratio methods.</li>
 independence problem including two-sample, K-sample (non-parametric ANOVA),
 correlation, censored, ordered and multivariate problems.</li>
 
+<li><pkg>epibasix</pkg> has functions such as <code>diffdetect</code>,
+<code>n4means</code> for continuous outcome and <code>n4props</code> and
+functions for matched pairs analysis in randomized trials.</li>
+
 <li><pkg>epicalc</pkg> provides a set of functions for sample size calculations,
 such as <code>n.for.2means</code>, <code>n.for.2p</code>,
 <code>n.for.equi.2p</code>, <code>n.for.noninferior.2p</code>,
@@ -208,6 +212,7 @@ association and heterogeneity.</li>
   <pkg priority="core">CRTSize</pkg>
   <pkg priority="core">dfcrm</pkg>
   <pkg>DoseFinding</pkg>
+  <pkg>epibasix</pkg>
   <pkg>epicalc</pkg>
   <pkg priority="core">experiment</pkg>
   <pkg>FrF2</pkg>
