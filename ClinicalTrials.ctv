@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2013-03-20</version>
+<version>2013-03-23</version>
 
 <info>
 
@@ -70,7 +70,6 @@ Armitage-McPherson and Rowe Algorithm using the method described in Schoenfeld
 <p><strong>Design and Analysis</strong></p>
 
 <ul>
-<li>Package <pkg>AGSDest</pkg> This package provides tools and functions for parameter estimation in adaptive group sequential trials.</li>
 <li>Package <pkg>clinfun</pkg> has functions for both design and analysis of
 clinical trials. For phase II trials, it has functions to calculate sample size,
 effect size, and power based on Fisher's exact test, the operating
@@ -196,7 +195,6 @@ association and heterogeneity.</li>
 
 <packagelist>
   <pkg priority="core">adaptTest</pkg>
-  <pkg>AGSDest</pkg>
   <pkg priority="core">asd</pkg>
   <pkg>asypow</pkg>
   <pkg priority="core">bcrm</pkg> 
