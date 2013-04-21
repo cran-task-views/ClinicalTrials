@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2013-03-23</version>
+<version>2013-04-21</version>
 
 <info>
 
@@ -106,7 +106,6 @@ the hyperparameters and the posterior analysis can be processed.</li>
 of different sequential stopping boundaries (a truncated sequential probability
 ratio test boundary and a boundary proposed by Besag and Clifford (1991). It
 gives valid p-values and confidence intervals on p-values.</li> 
-<li><pkg>medAdherence</pkg> A variety of measures have been developed to calculate the medication adherence. Definitions and methods to address adherence differ greatly in public literature. Choosing which definition should be determined by overall study goals. This package provides the functions to calculate medication adherence based on commonly used definitions.</li>
 <li><pkg>nppbib</pkg>implements a nonparametric statistical test for rank or score data from partially-balanced incomplete block-design experiments.</li>
 <li><pkg>speff2trial</pkg>, the package performs estimation and testing of the
 treatment effect in a 2-group randomized clinical trial with a quantitative or
@@ -222,7 +221,6 @@ association and heterogeneity.</li>
   <pkg>longpower</pkg>
   <pkg priority="core">MChtest</pkg>
   <pkg>MCPMod</pkg>
-  <pkg>medAdherence</pkg>
   <pkg>meta</pkg>
   <pkg>metafor</pkg>
   <pkg>metaLik</pkg>
