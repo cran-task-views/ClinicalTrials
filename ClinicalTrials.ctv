@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2013-12-10</version>
+<version>2014-02-02</version>
 
 <info>
 
@@ -96,10 +96,6 @@ Currently only normally distributed homoscedastic endpoints are supported.</li>
 and trifactorial clinical trial designs using bootstrap methods and a classical
 approach.</li>
 
-<li>The package <pkg>ClinicalRobustPriors</pkg> can be employed for computing
-distributions (prior, likelihood, and posterior) and moments of robust models:
-Cauchy/Binomial, Cauchy/Normal and Berger/Normal. Furthermore, the assessment of
-the hyperparameters and the posterior analysis can be processed.</li>
 <li><pkg>clinsig</pkg> This function calculates both parametric and non-parametric versions of the Jacobson-Truax estimates of clinical significance.</li>
 
 <li><pkg>MChtest</pkg> performs Monte Carlo hypothesis tests. It allows a couple
@@ -201,7 +197,6 @@ association and heterogeneity.</li>
   <pkg priority="core">bifactorial</pkg> 
   <pkg priority="core">blockrand</pkg>
   <pkg priority="core">clinfun</pkg>
-  <pkg priority="core">ClinicalRobustPriors</pkg>
   <pkg>clinsig</pkg>
   <pkg>coin</pkg>
   <pkg>conf.design</pkg>
