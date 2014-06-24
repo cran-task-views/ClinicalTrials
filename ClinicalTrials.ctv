@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2014-06-08</version>
+<version>2014-06-24</version>
 
 <info>
 
@@ -171,7 +171,7 @@ or variability that comes from using data to estimate parameters.</li>
 <p><strong>Meta-Analysis</strong></p>
 <ul>
 
-<li><pkg>copas</pkg> is a package for statistical methods to model and adjust
+<li><pkg>metasens</pkg> is a package for statistical methods to model and adjust
 for bias in meta-analysis</li>
 
 <li><pkg>meta</pkg> is for fixed and random effects meta-analysis. It has
@@ -206,7 +206,6 @@ association and heterogeneity.</li>
   <pkg>clinsig</pkg>
   <pkg>coin</pkg>
   <pkg>conf.design</pkg>
-  <pkg>copas</pkg>
   <pkg>CRM</pkg>
   <pkg priority="core">CRTSize</pkg>
   <pkg priority="core">dfcrm</pkg>
@@ -226,6 +225,7 @@ association and heterogeneity.</li>
   <pkg>meta</pkg>
   <pkg>metafor</pkg>
   <pkg>metaLik</pkg>
+  <pkg>metasens</pkg>
   <pkg>multcomp</pkg>
   <pkg>nppbib</pkg>
   <pkg priority="core">PIPS</pkg>
