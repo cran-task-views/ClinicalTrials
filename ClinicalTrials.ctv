@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2014-06-24</version>
+<version>2014-12-07</version>
 
 <info>
 
@@ -58,7 +58,6 @@ and a hypothesis about the distribution of future data.</li>
 <li><pkg>PwrGSD</pkg> is a set of tools to compute power in a group sequential
 design.</li>
 <li><pkg>qtlDesign</pkg>provides tools for the design of QTL experiments.</li>
-<li><pkg>samplesize</pkg> computes sample size for Student's t-test with equal and nonequal variances and for the Wilcoxon-Mann-Whitney test for categorical data with and without ties.</li>
 <li><pkg>seqmon</pkg> is computes the probability of crossing sequential
 efficacy and futility boundaries in a clinical trial. It implements the
 Armitage-McPherson and Rowe Algorithm using the method described in Schoenfeld
@@ -234,7 +233,6 @@ association and heterogeneity.</li>
   <pkg priority="core">PwrGSD</pkg>
   <pkg priority="core">qtlDesign</pkg>
   <pkg>rmeta</pkg>
-  <pkg priority="core">samplesize</pkg>
   <pkg priority="core">seqmon</pkg>
   <pkg priority="core">speff2trial</pkg>
   <pkg>ssanv</pkg>
