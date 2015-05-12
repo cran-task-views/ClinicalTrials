@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2014-12-07</version>
+<version>2015-05-12</version>
 
 <info>
 
@@ -137,11 +137,6 @@ correlation, censored, ordered and multivariate problems.</li>
 <code>n4means</code> for continuous outcome and <code>n4props</code> and
 functions for matched pairs analysis in randomized trials.</li>
 
-<li><pkg>epicalc</pkg> provides a set of functions for sample size calculations,
-such as <code>n.for.2means</code>, <code>n.for.2p</code>,
-<code>n.for.equi.2p</code>, <code>n.for.noninferior.2p</code>,
-<code>n.for.cluster.2p</code>, etc.</li>
-
 <li><code>ae.dotplot</code> from <pkg>HH</pkg> shows a two-panel display
 of the most frequently occurring adverse events
 in the active arm of a clinical study.</li>
@@ -210,7 +205,6 @@ association and heterogeneity.</li>
   <pkg priority="core">dfcrm</pkg>
   <pkg>DoseFinding</pkg>
   <pkg>epibasix</pkg>
-  <pkg>epicalc</pkg>
   <pkg priority="core">experiment</pkg>
   <pkg>FrF2</pkg>
   <pkg priority="core">GroupSeq</pkg>
