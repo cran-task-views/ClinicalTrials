@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2015-05-12</version>
+<version>2015-07-03</version>
 
 <info>
 
@@ -105,7 +105,6 @@ gives valid p-values and confidence intervals on p-values.</li>
 <li><pkg>speff2trial</pkg>, the package performs estimation and testing of the
 treatment effect in a 2-group randomized clinical trial with a quantitative or
 dichotomous endpoint.</li>
-<li><pkg>tdm</pkg> This package can be used to estimate individual pharmacokinetic parameters with one or more drug serum/plasma concentrations obtained from a single subject or multiple subjects using OpenBUGS (Bayesian inference Using Gibbs Sampling) interfaced through BRugs. Besides, it also can calculate a suggested dose with the target drug concentration (C ->D) or calculate a predicted drug concentration with a given dose (D -> C).</li>
 
 </ul>
 
@@ -231,7 +230,6 @@ association and heterogeneity.</li>
   <pkg priority="core">speff2trial</pkg>
   <pkg>ssanv</pkg>
   <pkg priority="core">survival</pkg>
-  <pkg>tdm</pkg>
   <pkg priority="core">TEQR</pkg>
   <pkg priority="core">TrialSize</pkg>
 </packagelist>
