@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2015-07-31</version>
+<version>2016-08-18</version>
 
 <info>
 
@@ -106,6 +106,8 @@ gives valid p-values and confidence intervals on p-values.</li>
 <li><pkg>speff2trial</pkg>, the package performs estimation and testing of the
 treatment effect in a 2-group randomized clinical trial with a quantitative or
 dichotomous endpoint.</li>
+
+ <li><pkg>ThreeGroups</pkg> This package implements the Maximum Likelihood estimator for three-group designs proposed by Gerber, Green, Kaplan, and Kern (2010).</li>
 
 </ul>
 
@@ -233,6 +235,7 @@ association and heterogeneity.</li>
   <pkg>ssanv</pkg>
   <pkg priority="core">survival</pkg>
   <pkg priority="core">TEQR</pkg>
+  <pkg>ThreeGroups</pkg>
   <pkg priority="core">TrialSize</pkg>
 </packagelist>
 
