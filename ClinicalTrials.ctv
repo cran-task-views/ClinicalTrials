@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2017-11-29</version>
+<version>2018-01-28</version>
 
 <info>
 
@@ -27,7 +27,6 @@ to e-mail me regarding new packages or major package updates.</p>
 trials. It can also produce a PDF file of randomization cards.</li>
 <li><pkg>clusterPower</pkg> Calculate power for cluster randomized trials (CRTs) that compare two means, two proportions, or two counts using closed-form solutions. In addition, calculate power for cluster randomized crossover trials using Monte Carlo methods. For more information, see Reich et al. (2012) <a href="https://dx.doi.org/10.1371/journal.pone.0035564">doi:10.1371/journal.pone.0035564</a>.</li>
 <li><pkg>conf.design</pkg> This small package contains a series of simple tools for constructing and manipulating confounded and fractional factorial designs.</li>
-<li><pkg>crmPack</pkg> Implements a wide range of model-based dose escalation designs, ranging from classical and modern continual reassessment methods (CRMs) based on dose-limiting toxicity endpoints to dual-endpoint designs taking into account a biomarker/efficacy outcome. The focus is on Bayesian inference, making it very easy to setup a new design with its own JAGS code. However, it is also possible to implement 3+3 designs for comparison or models with non-Bayesian estimation. The whole package is written in a modular form in the S4 class system, making it very flexible for adaptation to new models, escalation or stopping rules.</li>
 <li><pkg>CRTSize</pkg> This package contains basic tools for the purpose of sample size estimation in cluster (group) randomized trials. The package contains traditional power-based methods, empirical smoothing (Rotondi and Donner, 2009), and updated meta-analysis techniques (Rotondi and Donner, 2011).</li>
 <li><pkg>dfcrm</pkg> This package provides functions to run the CRM and
 TITE-CRM in phase I trials and calibration tools for trial planning purposes.</li>
@@ -251,7 +250,6 @@ association and heterogeneity.</li>
   <pkg>ThreeGroups</pkg>
   <pkg priority="core">TrialSize</pkg>
   <pkg>clusterPower</pkg>
-  <pkg>crmPack</pkg>
   <pkg>dfped</pkg>
   <pkg>dfpk</pkg>
   <pkg>ewoc</pkg>
