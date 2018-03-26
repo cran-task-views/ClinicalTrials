@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2018-01-28</version>
+<version>2018-03-26</version>
 
 <info>
 
@@ -102,9 +102,6 @@ Currently only normally distributed homoscedastic endpoints are supported.</li>
 
 <ul>
 <li><pkg>adaptTest</pkg> The functions defined in this program serve for implementing adaptive two-stage tests. Currently, four tests are included: Bauer and Koehne (1994), Lehmacher and Wassmer (1999), Vandemeulebroecke (2006), and the horizontal conditional error function. User-defined tests can also be implemented. Reference: Vandemeulebroecke, An investigation of two-stage tests, Statistica Sinica 2006.</li>
-<li><pkg>bifactorial</pkg> makes global and multiple inferences for given bi-
-and trifactorial clinical trial designs using bootstrap methods and a classical
-approach.</li>
 
 <li><pkg>clinsig</pkg> This function calculates both parametric and non-parametric versions of the Jacobson-Truax estimates of clinical significance.</li>
 
@@ -207,7 +204,6 @@ association and heterogeneity.</li>
   <pkg priority="core">asd</pkg>
   <pkg>asypow</pkg>
   <pkg priority="core">bcrm</pkg> 
-  <pkg priority="core">bifactorial</pkg> 
   <pkg>binomSamSize</pkg>
   <pkg priority="core">blockrand</pkg>
   <pkg priority="core">clinfun</pkg>
