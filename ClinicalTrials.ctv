@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2019-02-20</version>
+<version>2019-12-22</version>
 
 <info>
 
@@ -147,8 +147,6 @@ SAS datasets into S, imputing missing values, advanced table making, variable cl
 string manipulation, conversion of S objects to LaTeX code, recoding variables, and bootstrap repeated
 measures analysis.</li>
 
-<li><pkg>InformativeCensoring</pkg> Multiple Imputation for Informative Censoring. This package implements two methods. Gamma Imputation from Jackson et al. (2014) <a href="https://dx.doi.org/10.1002/sim.6274">doi:10.1002/sim.6274</a> and Risk Score Imputation from Hsu et al. (2009) <a href="https://dx.doi.org/10.1002/sim.3480">doi:10.1002/sim.3480</a>.</li>
-
 <li><pkg>multcomp</pkg> covers simultaneous tests and confidence intervals for
 general linear hypotheses in parametric models, including linear, generalized
 linear, linear mixed effects, and survival models.</li>
@@ -238,7 +236,6 @@ association and heterogeneity.</li>
   <pkg>dfpk</pkg>
   <pkg>ewoc</pkg>
   <pkg>gsbDesign</pkg>
-  <pkg>InformativeCensoring</pkg>
   <pkg>Mediana</pkg>
   <pkg>ThreeArmedTrials</pkg>
 </packagelist>
