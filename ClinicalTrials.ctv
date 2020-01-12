@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang and Harry G. Zhang</maintainer>
-<version>2019-12-22</version>
+<version>2020-01-12</version>
 
 <info>
 
@@ -59,8 +59,6 @@ and plots confidence intervals of an effect estimate given observed data
 and a hypothesis about the distribution of future data.</li>
 <li><pkg>PowerTOST</pkg> contains functions to calculate power and sample size for various study designs used for bioequivalence studies. See function known.designs() for study designs covered. Moreover the package contains functions for power and sample size based on 'expected' power in case of uncertain (estimated) variability. Added are functions for the power and sample size for the ratio of two means with normally distributed data on the original scale (based on Fieller's confidence ('fiducial') interval).</li>
 <li><pkg>pwr</pkg> has power analysis functions along the lines of Cohen (1988).</li>
-<li><pkg>PwrGSD</pkg> is a set of tools to compute power in a group sequential
-design.</li>
 <li><pkg>qtlDesign</pkg>provides tools for the design of QTL experiments.</li>
 <li><pkg>samplesize</pkg> computes sample size for Student's t-test with equal and nonequal variances and for the Wilcoxon-Mann-Whitney test for categorical data with and without ties.</li>
 
@@ -221,7 +219,6 @@ association and heterogeneity.</li>
   <pkg priority="core">PIPS</pkg>
   <pkg priority="core">PowerTOST</pkg>
   <pkg priority="core">pwr</pkg>
-  <pkg priority="core">PwrGSD</pkg>
   <pkg priority="core">qtlDesign</pkg>
   <pkg>rmeta</pkg>
   <pkg>samplesize</pkg>
