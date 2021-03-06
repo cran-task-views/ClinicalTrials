@@ -2,8 +2,8 @@
 
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
-<maintainer email="Ed.Zhang.jr@gmail.com">Ed Zhang, Harry G. Zhang</maintainer>
-<version>2020-01-12</version>
+<maintainer email="ClinicalTrials.TaskView@yahoo.com">H.G. Zhang, Ed Zhang</maintainer>
+<version>2021-03-05</version>
 
 <info>
 
@@ -27,9 +27,17 @@ to e-mail me regarding new packages or major package updates.</p>
 trials. It can also produce a PDF file of randomization cards.</li>
 <li><pkg>clusterPower</pkg> Calculate power for cluster randomized trials (CRTs) that compare two means, two proportions, or two counts using closed-form solutions. In addition, calculate power for cluster randomized crossover trials using Monte Carlo methods. For more information, see Reich et al. (2012) <a href="https://dx.doi.org/10.1371/journal.pone.0035564">doi:10.1371/journal.pone.0035564</a>.</li>
 <li><pkg>conf.design</pkg> This small package contains a series of simple tools for constructing and manipulating confounded and fractional factorial designs.</li>
+
+<li><pkg>crmPack</pkg> Implements a wide range of model-based dose escalation designs, ranging from classical and modern continual reassessment methods (CRMs) based on dose-limiting toxicity endpoints to dual-endpoint designs taking into account a biomarker/efficacy outcome. The focus is on Bayesian inference, making it very easy to setup a new design with its own JAGS code. However, it is also possible to implement 3+3 designs for comparison or models with non-Bayesian estimation. The whole package is written in a modular form in the S4 class system, making it very flexible for adaptation to new models, escalation or stopping rules.</li>
+
 <li><pkg>CRTSize</pkg> This package contains basic tools for the purpose of sample size estimation in cluster (group) randomized trials. The package contains traditional power-based methods, empirical smoothing (Rotondi and Donner, 2009), and updated meta-analysis techniques (Rotondi and Donner, 2011).</li>
+
+<li><pkg>cosa</pkg> Implements bound constrained optimal sample allocation (BCOSA) framework described in Bulus &amp; Dong (2019) for power analysis of multilevel regression discontinuity designs (MRDDs) and multilevel randomized trials (MRTs) with continuous outcomes. Separate tools for statistical power and minimum detectable effect size computations are provided.</li>
+
 <li><pkg>dfcrm</pkg> This package provides functions to run the CRM and
 TITE-CRM in phase I trials and calibration tools for trial planning purposes.</li>
+
+<li><pkg>DTAT</pkg> Dose Titration Algorithm Tuning (DTAT) is a methodologic framework allowing dose individualization to be conceived as a continuous learning process that begins in early-phase clinical trials and continues throughout drug development, on into clinical practice. This package includes code that researchers may use to reproduce or extend key results of the DTAT research programme, plus tools for trialists to design and simulate a '3+3/PC' dose-finding study.</li>
 
 <li><pkg>ewoc</pkg> An implementation of a variety of escalation with overdose control designs introduced by Babb, Rogatko and Zacks (1998) <a href="https://dx.doi.org/10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9">doi:10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9</a>. It calculates the next dose as a clinical trial proceeds as well as performs simulations to obtain operating characteristics.</li>
 <li><pkg>experiment</pkg> contains tools for clinical experiments, e.g., a
@@ -45,6 +53,9 @@ equally spaced, and their number need not be specified in advance.</li>
 <li><pkg>gsDesign</pkg> derives group sequential designs and describes their
 properties.</li> 
 
+<li><pkg>Keyboard</pkg> We developed a package 'Keyboard' for designing single-agent, drug-combination, or phase I/II dose-finding clinical trials. The 'Keyboard' designs are novel early phase trial designs that can be implemented simply and transparently, similar to the 3+3 design, but yield excellent performance, comparable to those of more-complicated, model-based designs. The 'Keyboard' package provides tools for designing, conducting, and analyzing single-agent, drug-combination, and phase I/II dose-finding clinical trials.</li>
+
+
 <li><code>ldBand</code> from <pkg>Hmisc</pkg> computes and plots group
 sequential stopping boundaries from the Lan-DeMets method with a variety of
 a-spending functions using the ld98 program from the Department of
@@ -53,14 +64,37 @@ Kim, and KKG Lan.</li>
 
 <li><pkg>ldbounds</pkg> uses Lan-DeMets Method for group sequential trial; its
 functions calculate bounds and probabilities of a group sequential trial.</li> 
+
 <li><pkg>Mediana</pkg> Provides a general framework for clinical trial simulations based on the Clinical Scenario Evaluation (CSE) approach. The package supports a broad class of data models (including clinical trials with continuous, binary, survival-type and count-type endpoints as well as multivariate outcomes that are based on combinations of different endpoints), analysis strategies and commonly used evaluation criteria.</li>
 <li><pkg>PIPS</pkg> generates predicted interval plots, simulates
 and plots confidence intervals of an effect estimate given observed data
 and a hypothesis about the distribution of future data.</li>
 <li><pkg>PowerTOST</pkg> contains functions to calculate power and sample size for various study designs used for bioequivalence studies. See function known.designs() for study designs covered. Moreover the package contains functions for power and sample size based on 'expected' power in case of uncertain (estimated) variability. Added are functions for the power and sample size for the ratio of two means with normally distributed data on the original scale (based on Fieller's confidence ('fiducial') interval).</li>
+
+
+<li><pkg>MinEDfind</pkg> The nonparametric two-stage Bayesian adaptive design is a novel phase II clinical trial design for finding the minimum effective dose (MinED). This design is motivated by the top priority and concern of clinicians when testing a new drug, which is to effectively treat patients and minimize the chance of exposing them to subtherapeutic or overly toxic doses. It is used to design single-agent trials.</li>
+
+<li><pkg>presize</pkg> Bland (2009) recommended to base study sizes on the width of the confidence interval rather the power of a statistical test. The goal of 'presize' is to provide functions for such precision based sample size calculations. For a given sample size, the functions will return the precision (width of the confidence interval), and vice versa.</li>
+
+<li><pkg>PowerUpR</pkg> Includes tools to calculate statistical power, minimum detectable effect size (MDES), MDES difference (MDESD), and minimum required sample size for various multilevel randomized experiments with continuous outcomes. Some of the functions can assist with planning two- and three-level cluster-randomized trials (CRTs) sensitive to multilevel moderation and mediation (2-1-1, 2-2-1, and 3-2-1).</li>
+
 <li><pkg>pwr</pkg> has power analysis functions along the lines of Cohen (1988).</li>
+
 <li><pkg>qtlDesign</pkg>provides tools for the design of QTL experiments.</li>
+
+<li><pkg>randomizeR</pkg>This tool enables the user to choose a randomization procedure based on sound scientific criteria. It comprises the generation of randomization sequences as well the assessment of randomization procedures based on carefully selected criteria. Furthermore, 'randomizeR' provides a function for the comparison of randomization procedures.</li>
+
+<li><pkg>replicateBE</pkg>Performs comparative bioavailability calculations for Average Bioequivalence with Expanding Limits (ABEL). Implemented are 'Method A' and 'Method B' and the detection of outliers. If the design allows, assessment of the empiric Type I Error and iteratively adjusting alpha to control the consumer risk. Average Bioequivalence - optionally with a tighter (narrow therapeutic index drugs) or wider acceptance range (Gulf Cooperation Council, South Africa: Cmax) - is implemented as well.</li>
+
+
+<li><pkg>rpact</pkg>Design and analysis of confirmatory adaptive clinical trials with continuous, binary, and survival endpoints according to the methods described in the monograph by Wassmer and Brannath (2016). This includes classical group sequential as well as multi-stage adaptive hypotheses tests that are based on the combination testing principle.</li>
+
 <li><pkg>samplesize</pkg> computes sample size for Student's t-test with equal and nonequal variances and for the Wilcoxon-Mann-Whitney test for categorical data with and without ties.</li>
+
+<li><pkg>simglm</pkg> Simulates regression models, including both simple regression and generalized linear mixed models with up to three level of nesting. Power simulations that are flexible allowing the specification of missing data, unbalanced designs, and different random error distributions are built into the package.</li>
+
+<li><pkg>UnifiedDoseFinding</pkg> In many phase I trials, the design goal is to find the dose associated with a certain target toxicity rate. In some trials, the goal can be to find the dose with a certain weighted sum of rates of various toxicity grades. For others, the goal is to find the dose with a certain mean value of a continuous response. This package provides the setup and calculations needed to run a dose-finding trial with non-binary endpoints and performs simulations to assess design’s operating characteristics under various scenarios. </li>
+
 
 </ul>
 
@@ -197,10 +231,13 @@ association and heterogeneity.</li>
   <pkg>clinsig</pkg>
   <pkg>coin</pkg>
   <pkg>conf.design</pkg>
+  <pkg>cosa</pkg>
   <pkg>CRM</pkg>
+  <pkg>crmPack</pkg>
   <pkg priority="core">CRTSize</pkg>
   <pkg priority="core">dfcrm</pkg>
   <pkg>DoseFinding</pkg>
+  <pkg>DTAT</pkg>
   <pkg>epibasix</pkg>
   <pkg priority="core">experiment</pkg>
   <pkg>FrF2</pkg>
@@ -208,20 +245,28 @@ association and heterogeneity.</li>
   <pkg priority="core">gsDesign</pkg>
   <pkg>HH</pkg>
   <pkg priority="core">Hmisc</pkg>
+  <pkg>Keyboard</pkg>
   <pkg priority="core">ldbounds</pkg>
   <pkg>MCPMod</pkg>
   <pkg>meta</pkg>
   <pkg>metafor</pkg>
   <pkg>metaLik</pkg>
   <pkg>metasens</pkg>
+  <pkg>MinEDfind</pkg>
   <pkg>multcomp</pkg>
   <pkg>nppbib</pkg>
   <pkg priority="core">PIPS</pkg>
+  <pkg>PowerUpR</pkg>
   <pkg priority="core">PowerTOST</pkg>
+  <pkg>presize</pkg>
   <pkg priority="core">pwr</pkg>
   <pkg priority="core">qtlDesign</pkg>
+  <pkg>randomizeR</pkg>
+  <pkg>replicateBE</pkg>
   <pkg>rmeta</pkg>
+  <pkg>rpact</pkg>
   <pkg>samplesize</pkg>
+  <pkg>simglm</pkg>
   <pkg priority="core">speff2trial</pkg>
   <pkg>ssanv</pkg>
   <pkg priority="core">survival</pkg>
@@ -235,7 +280,9 @@ association and heterogeneity.</li>
   <pkg>gsbDesign</pkg>
   <pkg>Mediana</pkg>
   <pkg>ThreeArmedTrials</pkg>
+  <pkg>UnifiedDoseFinding</pkg>
 </packagelist>
+
 
 <links>
   <view>ExperimentalDesign</view>
@@ -246,3 +293,4 @@ association and heterogeneity.</li>
 </links>
 
 </CRANTaskView>
+
