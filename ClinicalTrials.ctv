@@ -3,7 +3,7 @@
 <name>ClinicalTrials</name>
 <topic>Clinical Trial Design, Monitoring, and Analysis</topic>
 <maintainer email="ClinicalTrials.TaskView@yahoo.com">H.G. Zhang, Ed Zhang</maintainer>
-<version>2021-03-05</version>
+<version>2021-06-20</version>
 
 <info>
 
@@ -49,7 +49,6 @@ trials.</li>
 designs via the alpha spending approach, i.e., interim analyses need not be
 equally spaced, and their number need not be specified in advance.</li>
 
-<li><pkg>gsbDesign</pkg> Group Sequential Operating Characteristics for Clinical, Bayesian two-arm Trials with known Sigma and Normal Endpoints.</li> 
 <li><pkg>gsDesign</pkg> derives group sequential designs and describes their
 properties.</li> 
 
@@ -277,7 +276,6 @@ association and heterogeneity.</li>
   <pkg>dfped</pkg>
   <pkg>dfpk</pkg>
   <pkg>ewoc</pkg>
-  <pkg>gsbDesign</pkg>
   <pkg>Mediana</pkg>
   <pkg>ThreeArmedTrials</pkg>
   <pkg>UnifiedDoseFinding</pkg>
