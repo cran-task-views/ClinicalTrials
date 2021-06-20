@@ -49,9 +49,6 @@ trials.</li>
 designs via the alpha spending approach, i.e., interim analyses need not be
 equally spaced, and their number need not be specified in advance.</li>
 
-<li><pkg>gsDesign</pkg> derives group sequential designs and describes their
-properties.</li> 
-
 <li><pkg>Keyboard</pkg> We developed a package 'Keyboard' for designing single-agent, drug-combination, or phase I/II dose-finding clinical trials. The 'Keyboard' designs are novel early phase trial designs that can be implemented simply and transparently, similar to the 3+3 design, but yield excellent performance, comparable to those of more-complicated, model-based designs. The 'Keyboard' package provides tools for designing, conducting, and analyzing single-agent, drug-combination, and phase I/II dose-finding clinical trials.</li>
 
 
@@ -241,7 +238,6 @@ association and heterogeneity.</li>
   <pkg priority="core">experiment</pkg>
   <pkg>FrF2</pkg>
   <pkg priority="core">GroupSeq</pkg>
-  <pkg priority="core">gsDesign</pkg>
   <pkg>HH</pkg>
   <pkg priority="core">Hmisc</pkg>
   <pkg>Keyboard</pkg>
