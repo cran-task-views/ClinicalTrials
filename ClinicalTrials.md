@@ -16,7 +16,7 @@ gives a brief introduction to important packages for analyzing clinical
 trial data. Please refer to task views
 `r view("ExperimentalDesign")`,
 `r view("Survival")`,
-`r view("Pharmacokinetics")` for more details on these
+`r view("Pharmacokinetics")`, `r view("Meta-analysis")` for more details on these
 topics.
 
 Contributions are always welcome and encouraged, either via e-mail to the
