@@ -3,7 +3,7 @@ name: ClinicalTrials
 topic: Clinical Trial Design, Monitoring, and Analysis
 maintainer: W.G. Zhang, R.G. Zhang, Ed Zhang
 email: ClinicalTrials.TaskView@yahoo.com
-version: 2021-12-29
+version: 2022-07-07
 source: https://github.com/cran-task-views/ClinicalTrials/
 ---
 
@@ -50,6 +50,12 @@ repository linked above.
 -   `r pkg("conf.design")` This small package contains a
     series of simple tools for constructing and manipulating confounded
     and fractional factorial designs.
+-   `r pkg("cosa")` Implements bound constrained optimal
+    sample allocation (BCOSA) framework described in Bulus & Dong (2019)
+    for power analysis of multilevel regression discontinuity designs
+    (MRDDs) and multilevel randomized trials (MRTs) with continuous
+    outcomes. Separate tools for statistical power and minimum
+    detectable effect size computations are provided.
 -   `r pkg("crmPack")` Implements a wide range of
     model-based dose escalation designs, ranging from classical and
     modern continual reassessment methods (CRMs) based on dose-limiting
@@ -65,12 +71,6 @@ repository linked above.
     cluster (group) randomized trials. The package contains traditional
     power-based methods, empirical smoothing (Rotondi and Donner, 2009),
     and updated meta-analysis techniques (Rotondi and Donner, 2011).
--   `r pkg("cosa")` Implements bound constrained optimal
-    sample allocation (BCOSA) framework described in Bulus & Dong (2019)
-    for power analysis of multilevel regression discontinuity designs
-    (MRDDs) and multilevel randomized trials (MRTs) with continuous
-    outcomes. Separate tools for statistical power and minimum
-    detectable effect size computations are provided.
 -   `r pkg("dfcrm", priority = "core")` This package provides
     functions to run the CRM and TITE-CRM in phase I trials and
     calibration tools for trial planning purposes.
@@ -105,6 +105,11 @@ repository linked above.
     computations related to group sequential designs via the alpha
     spending approach, i.e., interim analyses need not be equally
     spaced, and their number need not be specified in advance.
+-   `ldBand` from `r pkg("Hmisc", priority = "core")`
+    computes and plots group sequential stopping boundaries from the
+    Lan-DeMets method with a variety of a-spending functions using the
+    ld98 program from the Department of Biostatistics, University of
+    Wisconsin written by DM Reboussin, DL DeMets, KM Kim, and KKG Lan.
 -   `r pkg("Keyboard")` We developed a package 'Keyboard'
     for designing single-agent, drug-combination, or phase I/II
     dose-finding clinical trials. The 'Keyboard' designs are novel
@@ -114,11 +119,6 @@ repository linked above.
     designs. The 'Keyboard' package provides tools for designing,
     conducting, and analyzing single-agent, drug-combination, and phase
     I/II dose-finding clinical trials.
--   `ldBand` from `r pkg("Hmisc", priority = "core")`
-    computes and plots group sequential stopping boundaries from the
-    Lan-DeMets method with a variety of a-spending functions using the
-    ld98 program from the Department of Biostatistics, University of
-    Wisconsin written by DM Reboussin, DL DeMets, KM Kim, and KKG Lan.
 -   `r pkg("ldbounds", priority = "core")` uses Lan-DeMets
     Method for group sequential trial; its functions calculate bounds
     and probabilities of a group sequential trial.
@@ -129,6 +129,13 @@ repository linked above.
     and count-type endpoints as well as multivariate outcomes that are
     based on combinations of different endpoints), analysis strategies
     and commonly used evaluation criteria.
+-   `r pkg("MinEDfind")` The nonparametric two-stage
+    Bayesian adaptive design is a novel phase II clinical trial design
+    for finding the minimum effective dose (MinED). This design is
+    motivated by the top priority and concern of clinicians when testing
+    a new drug, which is to effectively treat patients and minimize the
+    chance of exposing them to subtherapeutic or overly toxic doses. It
+    is used to design single-agent trials.
 -   `r pkg("PIPS", priority = "core")` generates predicted
     interval plots, simulates and plots confidence intervals of an
     effect estimate given observed data and a hypothesis about the
@@ -142,19 +149,6 @@ repository linked above.
     functions for the power and sample size for the ratio of two means
     with normally distributed data on the original scale (based on
     Fieller's confidence ('fiducial') interval).
--   `r pkg("MinEDfind")` The nonparametric two-stage
-    Bayesian adaptive design is a novel phase II clinical trial design
-    for finding the minimum effective dose (MinED). This design is
-    motivated by the top priority and concern of clinicians when testing
-    a new drug, which is to effectively treat patients and minimize the
-    chance of exposing them to subtherapeutic or overly toxic doses. It
-    is used to design single-agent trials.
--   `r pkg("presize")` Bland (2009) recommended to base
-    study sizes on the width of the confidence interval rather the power
-    of a statistical test. The goal of 'presize' is to provide
-    functions for such precision based sample size calculations. For a
-    given sample size, the functions will return the precision (width of
-    the confidence interval), and vice versa.
 -   `r pkg("PowerUpR")` Includes tools to calculate
     statistical power, minimum detectable effect size (MDES), MDES
     difference (MDESD), and minimum required sample size for various
@@ -162,6 +156,12 @@ repository linked above.
     the functions can assist with planning two- and three-level
     cluster-randomized trials (CRTs) sensitive to multilevel moderation
     and mediation (2-1-1, 2-2-1, and 3-2-1).
+-   `r pkg("presize")` Bland (2009) recommended to base
+    study sizes on the width of the confidence interval rather the power
+    of a statistical test. The goal of 'presize' is to provide
+    functions for such precision based sample size calculations. For a
+    given sample size, the functions will return the precision (width of
+    the confidence interval), and vice versa.
 -   `r pkg("pwr", priority = "core")` has power analysis
     functions along the lines of Cohen (1988).
 -   `r pkg("qtlDesign", priority = "core")` provides tools
@@ -227,14 +227,6 @@ repository linked above.
     group sequential designs.
 -   Package `r pkg("CRM")` Continual Reassessment Method
     (CRM) simulator for Phase I Clinical Trials.
--   Package `r pkg("dfpk")` Statistical methods involving PK
-    measures are provided, in the dose allocation process during a Phase
-    I clinical trials. These methods enter pharmacokinetics (PK) in the
-    dose finding designs in different ways, including covariates models,
-    dependent variable or hierarchical models. This package provides
-    functions to generate data from several scenarios and functions to
-    run simulations which their objective is to determine the maximum
-    tolerated dose (MTD).
 -   Package `r pkg("dfped")` A unified method for designing
     and analysing dose-finding trials in paediatrics, while bridging
     information from adults, is proposed in the dfped package. The dose
@@ -254,6 +246,14 @@ repository linked above.
     proposed in the examples of the corresponding R functions in the
     package. Finally, in this package you can find a simulation function
     for one trial or for more than one trial.
+-   Package `r pkg("dfpk")` Statistical methods involving PK
+    measures are provided, in the dose allocation process during a Phase
+    I clinical trials. These methods enter pharmacokinetics (PK) in the
+    dose finding designs in different ways, including covariates models,
+    dependent variable or hierarchical models. This package provides
+    functions to generate data from several scenarios and functions to
+    run simulations which their objective is to determine the maximum
+    tolerated dose (MTD).
 -   Package `r pkg("DoseFinding")` provides functions for
     the design and analysis of dose-finding experiments (for example
     pharmaceutical Phase II clinical trials). It provides functions for:
@@ -350,20 +350,18 @@ repository linked above.
     confidence intervals for general linear hypotheses in parametric
     models, including linear, generalized linear, linear mixed effects,
     and survival models.
+-   `r pkg("ssanv")` is a set of functions to calculate
+    sample size for two-sample difference in means tests. Does
+    adjustments for either nonadherence or variability that comes from
+    using data to estimate parameters.
 -   `r pkg("survival", priority = "core")` contains
     descriptive statistics, two-sample tests, parametric accelerated
     failure models, Cox model. Delayed entry (truncation) allowed for
     all models; interval censoring for parametric models. Case-cohort
     designs.
--   `r pkg("ssanv")` is a set of functions to calculate
-    sample size for two-sample difference in means tests. Does
-    adjustments for either nonadherence or variability that comes from
-    using data to estimate parameters.
 
 ### Meta-Analysis
 
--   `r pkg("metasens")` is a package for statistical methods
-    to model and adjust for bias in meta-analysis
 -   `r pkg("meta")` is for fixed and random effects
     meta-analysis. It has Functions for tests of bias, forest and funnel
     plot.
@@ -374,6 +372,8 @@ repository linked above.
     Peto's method are also implemented.
 -   `r pkg("metaLik")` Likelihood inference in meta-analysis
     and meta-regression models.
+-   `r pkg("metasens")` is a package for statistical methods
+    to model and adjust for bias in meta-analysis
 -   `r pkg("rmeta")` has functions for simple fixed and
     random effects meta-analysis for two-sample comparisons and
     cumulative meta-analyses. Draws standard summary plots, funnel
