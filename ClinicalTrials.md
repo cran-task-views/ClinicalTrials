@@ -26,10 +26,9 @@ repository linked above.
 
 ### Design and Monitoring
 
--   `r pkg("TrialSize", priority = "core")` This package has
-    more than 80 functions from the book *Sample Size Calculations in
-    Clinical Research* (Chow & Wang & Shao, 2007, 2nd ed., Chapman
-    &Hall/CRC).
+-   `r pkg("adaptr")` uses Bayesian methods to simulate adaptive clinical trials 
+    using adaptive stopping, adaptive arm dropping, and/or adaptive 
+    randomisation. See also Granholm et al. 2022 ([doi:10.21105/joss.04284](https://doi.org/10.21105/joss.04284))
 -   `r pkg("asd", priority = "core")` This Package runs
     simulations for adaptive seamless designs using early outcomes for
     treatment selection.
@@ -197,6 +196,10 @@ repository linked above.
     to three level of nesting. Power simulations that are flexible
     allowing the specification of missing data, unbalanced designs, and
     different random error distributions are built into the package.
+-   `r pkg("TrialSize", priority = "core")` This package has
+    more than 80 functions from the book *Sample Size Calculations in
+    Clinical Research* (Chow & Wang & Shao, 2007, 2nd ed., Chapman
+    &Hall/CRC).
 -   `r pkg("UnifiedDoseFinding")` In many phase I trials,
     the design goal is to find the dose associated with a certain target
     toxicity rate. In some trials, the goal can be to find the dose with
