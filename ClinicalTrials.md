@@ -359,6 +359,11 @@ repository linked above.
 
 ### Meta-Analysis
 
+-   `r pkg("ctrdata")` is a package for retrieving (downloading) information 
+    on clinical trials from public registers, for aggregating and analysing 
+    it; can be used with protocol- and result-related information from the
+    'European Union Clinical Trials Register', 'ClinicalTrials.gov', 'ISRCTN',
+    and the 'European Union Clinical Trials Information System' ('CTIS')
 -   `r pkg("metasens")` is a package for statistical methods
     to model and adjust for bias in meta-analysis
 -   `r pkg("meta")` is for fixed and random effects
