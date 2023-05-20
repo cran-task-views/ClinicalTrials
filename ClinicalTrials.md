@@ -276,6 +276,8 @@ repository linked above.
     horizontal conditional error function. User-defined tests can also
     be implemented. Reference: Vandemeulebroecke, An investigation of
     two-stage tests, Statistica Sinica 2006.
+-   `r pkg("adaptr")` simulates adaptive (multi-arm, multi-stage) 
+    clinical trials using adaptive stopping, adaptive arm dropping, and/or adaptive randomisation. 
 -   `r pkg("clinsig")` This function calculates both
     parametric and non-parametric versions of the Jacobson-Truax
     estimates of clinical significance.
@@ -303,6 +305,9 @@ repository linked above.
     `kruskal.test`, `mcnemar.test`, `cor.test`, `power.t.test`,
     `power.prop.test`, `power.anova.test`, `lm`, `glm`, `nls`, `anova`
     (and its `lm` and `glm` methods) among many others.
+-   `r pkg("accrualPlot")` Tracking accrual in clinical trials is important for trial success.
+    'accrualPlot' provides functions to aid the tracking of accrual and predict when a trial 
+    will reach it's intended sample size.
 -   `r pkg("binomSamSize")` is a suite of functions for
     computing confidence intervals and necessary sample sizes for the
     success probability parameter Bernoulli distribution under simple
@@ -311,6 +316,8 @@ repository linked above.
     for the general independence problem including two-sample, K-sample
     (non-parametric ANOVA), correlation, censored, ordered and
     multivariate problems.
+-   `r pkg("ctrdata")` is a system for querying, retrieving and analyzing 
+    protocol- and results-related information on clinical trials from four public registers
 -   `r pkg("epibasix")` has functions such as `diffdetect`,
     `n4means` for continuous outcome and `n4props` and functions for
     matched pairs analysis in randomized trials.
