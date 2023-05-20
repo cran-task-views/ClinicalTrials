@@ -123,6 +123,9 @@ repository linked above.
 -   `r pkg("ldbounds", priority = "core")` uses Lan-DeMets
     Method for group sequential trial; its functions calculate bounds
     and probabilities of a group sequential trial.
+-   `r pkg("longpower", priority = "core")`Compute power and sample size 
+    for linear models of longitudinal data. The package is described in 
+    Iddi and Donohue (2022) <doi:10.32614/RJ-2022-022>.  
 -   `r pkg("Mediana")` Provides a general framework for
     clinical trial simulations based on the Clinical Scenario Evaluation
     (CSE) approach. The package supports a broad class of data models
@@ -343,10 +346,17 @@ repository linked above.
     missing values, advanced table making, variable clustering,
     character string manipulation, conversion of S objects to LaTeX
     code, recoding variables, and bootstrap repeated measures analysis.
+-   `r pkg("mmrm")` Implements mixed models for repeated measures (MMRM), 
+    a popular choice for analyzing longitudinal continuous outcomes in 
+    randomized clinical trials and beyond.
 -   `r pkg("multcomp")` covers simultaneous tests and
     confidence intervals for general linear hypotheses in parametric
     models, including linear, generalized linear, linear mixed effects,
     and survival models.
+-   `r pkg("rbmi")` Implements standard and reference based multiple 
+    imputation allowing for the imputation of longitudinal datasets using 
+    predefined strategies. The package is described in Gower-Page et al (2022) 
+    <doi: 10.21105/joss.04251>.
 -   `r pkg("survival", priority = "core")` contains
     descriptive statistics, two-sample tests, parametric accelerated
     failure models, Cox model. Delayed entry (truncation) allowed for
