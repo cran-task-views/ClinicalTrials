@@ -61,11 +61,6 @@ repository linked above.
     or models with non-Bayesian estimation. The whole package is written
     in a modular form in the S4 class system, making it very flexible
     for adaptation to new models, escalation or stopping rules.
--   `r pkg("CRTSize", priority = "core")` This package
-    contains basic tools for the purpose of sample size estimation in
-    cluster (group) randomized trials. The package contains traditional
-    power-based methods, empirical smoothing (Rotondi and Donner, 2009),
-    and updated meta-analysis techniques (Rotondi and Donner, 2011).
 -   `r pkg("cosa")` Implements bound constrained optimal
     sample allocation (BCOSA) framework described in Bulus & Dong (2019)
     for power analysis of multilevel regression discontinuity designs
@@ -102,19 +97,6 @@ repository linked above.
     is currently subject to intensive development. While much of the
     intended functionality is already available, some changes and
     improvements are still to be expected.
--   `r pkg("GroupSeq", priority = "core")` performs
-    computations related to group sequential designs via the alpha
-    spending approach, i.e., interim analyses need not be equally
-    spaced, and their number need not be specified in advance.
--   `r pkg("Keyboard")` We developed a package 'Keyboard'
-    for designing single-agent, drug-combination, or phase I/II
-    dose-finding clinical trials. The 'Keyboard' designs are novel
-    early phase trial designs that can be implemented simply and
-    transparently, similar to the 3+3 design, but yield excellent
-    performance, comparable to those of more-complicated, model-based
-    designs. The 'Keyboard' package provides tools for designing,
-    conducting, and analyzing single-agent, drug-combination, and phase
-    I/II dose-finding clinical trials.
 -   `ldBand` from `r pkg("Hmisc", priority = "core")`
     computes and plots group sequential stopping boundaries from the
     Lan-DeMets method with a variety of a-spending functions using the
@@ -133,10 +115,6 @@ repository linked above.
     and count-type endpoints as well as multivariate outcomes that are
     based on combinations of different endpoints), analysis strategies
     and commonly used evaluation criteria.
--   `r pkg("PIPS", priority = "core")` generates predicted
-    interval plots, simulates and plots confidence intervals of an
-    effect estimate given observed data and a hypothesis about the
-    distribution of future data.
 -   `r pkg("PowerTOST", priority = "core")` contains
     functions to calculate power and sample size for various study
     designs used for bioequivalence studies. See function
@@ -168,8 +146,6 @@ repository linked above.
     and mediation (2-1-1, 2-2-1, and 3-2-1).
 -   `r pkg("pwr", priority = "core")` has power analysis
     functions along the lines of Cohen (1988).
--   `r pkg("qtlDesign", priority = "core")` provides tools
-    for the design of QTL experiments.
 -   `r pkg("randomizeR")` This tool enables the user to
     choose a randomization procedure based on sound scientific criteria.
     It comprises the generation of randomization sequences as well the
@@ -303,6 +279,11 @@ repository linked above.
 -   `r pkg("clinsig")` This function calculates both
     parametric and non-parametric versions of the Jacobson-Truax
     estimates of clinical significance.
+-   `r pkg("clinicalsignificance")` The goal of this package is to provide all 
+   necessary tools for analyses of clinical significance in clinical intervention studies. 
+   In contrast to statistical significance, which assesses if it is probable that there 
+   is a treatment effect, clinical significance can be used to determine if a treatment 
+   effect is of practical use or meaningful for patients.
 -   `r pkg("nppbib")` implements a nonparametric statistical
     test for rank or score data from partially-balanced incomplete
     block-design experiments.
@@ -322,9 +303,6 @@ repository linked above.
     `kruskal.test`, `mcnemar.test`, `cor.test`, `power.t.test`,
     `power.prop.test`, `power.anova.test`, `lm`, `glm`, `nls`, `anova`
     (and its `lm` and `glm` methods) among many others.
--   `r pkg("asypow")` has a set of routines for calculating
-    power and related quantities utilizing asymptotic likelihood ratio
-    methods.
 -   `r pkg("binomSamSize")` is a suite of functions for
     computing confidence intervals and necessary sample sizes for the
     success probability parameter Bernoulli distribution under simple
