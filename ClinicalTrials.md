@@ -305,6 +305,10 @@ repository linked above.
     `kruskal.test`, `mcnemar.test`, `cor.test`, `power.t.test`,
     `power.prop.test`, `power.anova.test`, `lm`, `glm`, `nls`, `anova`
     (and its `lm` and `glm` methods) among many others.
+-   `r pkg("clintrialx")` R package to fetch and explore clinical trials data from freely available registries.
+     Fetch data in bulk, customize data and build comprehensive html reports. Currently, it supports the
+     ClinicalTrials.gov registry and CTTI AACT (Access to Aggregate Content of ClinicalTrials.gov).
+    [https://doi.org/10.32614/CRAN.package.clintrialx](https://cran.r-project.org/package=clintrialx)
 -   `r pkg("accrualPlot")` Tracking accrual in clinical trials is important for trial success.
     'accrualPlot' provides functions to aid the tracking of accrual and predict when a trial 
     will reach it's intended sample size.
