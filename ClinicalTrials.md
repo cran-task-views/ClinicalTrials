@@ -33,6 +33,7 @@ repository linked above.
 -   `r pkg("asd", priority = "core")` This Package runs
     simulations for adaptive seamless designs using early outcomes for
     treatment selection.
+-   `r pkg("BinGSD", priority = "core")` Calculate Boundaries and Conditional Power for Single Arm Group Sequential Test with Binary Endpoint
 -   `r pkg("bcrm", priority = "core")` This package
     implements a wide variety of one and two-parameter Bayesian CRM
     designs. The program can run interactively, allowing the user to
@@ -46,8 +47,7 @@ repository linked above.
     two counts using closed-form solutions. In addition, calculate power
     for cluster randomized crossover trials using Monte Carlo methods.
     For more information, see Reich et al. (2012)
-    [doi:10.1371/journal.pone.0035564](https://dx.doi.org/10.1371/journal.pone.0035564)
-    .
+    [doi:10.1371/journal.pone.0035564](https://dx.doi.org/10.1371/journal.pone.0035564).
 -   `r pkg("conf.design")` This small package contains a
     series of simple tools for constructing and manipulating confounded
     and fractional factorial designs.
@@ -97,6 +97,20 @@ repository linked above.
     is currently subject to intensive development. While much of the
     intended functionality is already available, some changes and
     improvements are still to be expected.
+-   `futility` Randomized clinical trials commonly follow participants for
+    a time-to-event efficacy endpoint for a fixed period of time. Consequently,
+    at the time when the last enrolled participant completes their follow-up,
+    the number of observed endpoints is a random variable. Assuming data collected
+    through an interim timepoint, simulation-based estimation and inferential procedures
+    in the standard right-censored failure time analysis framework are conducted for
+    the distribution of the number of endpoints–in total as well as by treatment arm–at
+    the end of the follow-up period. The future (i.e., yet unobserved) enrollment, endpoint,
+    and dropout times are generated according to mechanisms specified in the simTrial() function
+    in the 'seqDesign' package. A Bayesian model for the endpoint rate, offering the option
+    to specify a robust mixture prior distribution, is used for generating future data (see the vignette for details).
+    Inference can be restricted to participants who received treatment according to the protocol and
+    are observed to be at risk for the endpoint at a specified timepoint. Plotting functions are provided for graphical display of results.
+-   `HCTDesign` Group Sequential Design for Historical Control Trial with Survival Outcome.
 -   `ldBand` from `r pkg("Hmisc", priority = "core")`
     computes and plots group sequential stopping boundaries from the
     Lan-DeMets method with a variety of a-spending functions using the
@@ -107,14 +121,16 @@ repository linked above.
     and probabilities of a group sequential trial.
 -   `r pkg("longpower", priority = "core")`Compute power and sample size 
     for linear models of longitudinal data. The package is described in 
-    Iddi and Donohue (2022) <doi:10.32614/RJ-2022-022>.  
--   `r pkg("Mediana")` Provides a general framework for
+    Iddi and Donohue (2022) <doi:10.32614/RJ-2022-022>.
+-   `r pkg("maxcombo", priority = "core")`The Group Sequential Max-Combo Test for Comparing Survival Curves. 
+-   `r pkg("Mediana", priority = "core")` Provides a general framework for
     clinical trial simulations based on the Clinical Scenario Evaluation
     (CSE) approach. The package supports a broad class of data models
     (including clinical trials with continuous, binary, survival-type
     and count-type endpoints as well as multivariate outcomes that are
     based on combinations of different endpoints), analysis strategies
     and commonly used evaluation criteria.
+-   `r pkg("permGS", priority = "core")` Permutational Group Sequential Test for Time-to-Event Data.
 -   `r pkg("PowerTOST", priority = "core")` contains
     functions to calculate power and sample size for various study
     designs used for bioequivalence studies. See function
@@ -182,6 +198,13 @@ repository linked above.
     to three level of nesting. Power simulations that are flexible
     allowing the specification of missing data, unbalanced designs, and
     different random error distributions are built into the package.
+-   `r pkg("SurrogateSeq")` 	Group Sequential Testing of a Treatment Effect Using a Surrogate Marker.
+-   `r pkg("tLagInterim")` Implements inverse and augmented inverse probability
+     weiighted estimators for common treatment effect parameters at an interim analysis
+    with time-lagged outcome that may not be available for all enrolled subjects.
+    Produces estimators, standard errors, and information that can be used to compute
+    stopping boundaries using software that assumes that the estimators/test statistics
+    have independent increments. Tsiatis, A. A. and Davidian, M., (2022) <doi:10.48550/arXiv.2204.10739> .
 -   `r pkg("UnifiedDoseFinding")` In many phase I trials,
     the design goal is to find the dose associated with a certain target
     toxicity rate. In some trials, the goal can be to find the dose with
@@ -197,6 +220,17 @@ repository linked above.
 -   Package `r pkg("AGSDest")` This package provides tools
     and functions for parameter estimation in adaptive group sequential
     trials.
+-   Package `r pkg("ASSISTant")` Clinical trial design for subgroup selection in
+    three-stage group sequential trial as described in Lai, Lavori and Liao (2014, <doi:10.1016/j.cct.2014.09.001>).
+    Includes facilities for design, exploration and analysis of such trials.
+    An implementation of the initial DEFUSE-3 trial is also provided as a vignette.
+-   Package `r pkg("BayesOrdDesign")` The proposed group-sequential trial design is based on
+    Bayesian methods for ordinal endpoints, including three methods, the proportional-odds-model (PO)-based,
+    non-proportional-odds-model (NPO)-based, and PO/NPO switch-model-based designs,
+    which makes our proposed methods generic to be able to deal with various scenarios.
+    Richard J. Barker, William A. Link (2013) <doi:10.1080/00031305.2013.791644>.
+    Thomas A. Murray, Ying Yuan, Peter F. Thall, Joan H. Elizondo, Wayne L.Hofstetter (2018) <doi:10.1111/biom.12842>.
+    Chengxue Zhong, Haitao Pan, Hongyu Miao (2021) <doi:10.48550/arXiv.2108.06568>.
 -   Package `r pkg("BayesianMCPMod")` This package is an innovative method
     that improves the traditional MCPMod by systematically incorporating historical data,
     such as previous placebo group data. This R package offers functions for simulating,
@@ -255,6 +289,14 @@ repository linked above.
     calculating optimal designs and an implementation of the
     `r pkg("MCPMod")` methodology. Currently only normally
     distributed homoscedastic endpoints are supported.
+-   Package `r pkg("GSED")` provides functions to apply "Group sequential enrichment design incorporating subgroup selection"
+    (GSED) method proposed by Magnusson and Turnbull (2013) <doi:10.1002/sim.5738>.
+-   Package `r pkg("grpseq")` provides functions for
+    	Group Sequential Analysis of Clinical Trials.
+-   Package `r pkg("gscounts")` provides functions for
+    	Group Sequential Designs with Negative Binomial Outcomes.
+-   Package `r pkg("gsMAMS")` 	Group Sequential Designs of Multi-Arm Multi-Stage Trials.
+-   Package `r pkg("gsrsb")` 	Group Sequential Refined Secondary Boundary.
 -   `r pkg("MCPMod")` This package implements a methodology
     for the design and analysis of dose-response studies that combines
     aspects of multiple comparison procedures and modeling approaches
