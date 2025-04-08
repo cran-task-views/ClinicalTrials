@@ -1,7 +1,7 @@
 ---
 name: ClinicalTrials
 topic: Clinical Trial Design, Monitoring, and Analysis
-maintainer: Ed Zhang, W. G. Zhang, R. G. Zhang
+maintainer: Ed Zhang
 email: ClinicalTrials.TaskView@yahoo.com
 version: 2021-12-29
 source: https://github.com/cran-task-views/ClinicalTrials/
@@ -146,6 +146,12 @@ repository linked above.
     and mediation (2-1-1, 2-2-1, and 3-2-1).
 -   `r pkg("pwr", priority = "core")` has power analysis
     functions along the lines of Cohen (1988).
+-    `r pkg("PwrGSD", priority = "core")` has tools for the evaluation of
+     interim analysis plans for sequentially monitored trials on a survival endpoint;
+     tools to construct efficacy and futility boundaries, for deriving power of a
+     sequential design at a specified alternative, template for evaluating the
+     performance of candidate plans at a set of time varying alternatives.
+     See Izmirlian, G. (2014) <doi:10.4310/SII.2014.v7.n1.a4>..
 -   `r pkg("randomizeR")` This tool enables the user to
     choose a randomization procedure based on sound scientific criteria.
     It comprises the generation of randomization sequences as well the
@@ -191,6 +197,18 @@ repository linked above.
 -   Package `r pkg("AGSDest")` This package provides tools
     and functions for parameter estimation in adaptive group sequential
     trials.
+-   Package `r pkg("BayesianMCPMod")` This package is an innovative method
+    that improves the traditional MCPMod by systematically incorporating historical data,
+    such as previous placebo group data. This R package offers functions for simulating,
+    analyzing, and evaluating Bayesian MCPMod trials with normally distributed endpoints.
+    It enables the assessment of trial designs incorporating historical data across various
+    true dose-response relationships and sample sizes. Robust mixture prior distributions,
+    such as those derived with the Meta-Analytic-Predictive approach
+    (Schmidli et al. (2014) <doi:10.1111/biom.12242>), can be specified for each dose group.
+    Resulting mixture posterior distributions are used in the Bayesian Multiple Comparison
+    Procedure and modeling steps. The modeling step also includes a weighted model averaging
+    approach (Pinheiro et al. (2014) <doi:10.1002/sim.6052>).
+    Estimated dose-response relationships can be bootstrapped and visualized.
 -   Package `r pkg("clinfun", priority = "core")` has
     functions for both design and analysis of clinical trials. For phase
     II trials, it has functions to calculate sample size, effect size,
@@ -371,7 +389,13 @@ repository linked above.
     cumulative meta-analyses. Draws standard summary plots, funnel
     plots, and computes summaries and tests for association and
     heterogeneity.
-
+-   `r pkg("RBesT")` has Tool-set to support Bayesian evidence synthesis.
+   This includes meta-analysis, (robust) prior derivation from historical data,
+   operating characteristics and analysis (1 and 2 sample cases).
+   Please refer to Weber et al. (2021) <doi:10.18637/jss.v100.i19> for details     
+   on applying this package while Neuenschwander et al.
+   (2010) <doi:10.1177/1740774509356002> and Schmidli et al.
+   (2014) <doi:10.1111/biom.12242> explain details on the methodology.
 
 
 ### Links
