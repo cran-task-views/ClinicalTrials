@@ -231,9 +231,9 @@ repository linked above.
     Richard J. Barker, William A. Link (2013) <doi:10.1080/00031305.2013.791644>.
     Thomas A. Murray, Ying Yuan, Peter F. Thall, Joan H. Elizondo, Wayne L.Hofstetter (2018) <doi:10.1111/biom.12842>.
     Chengxue Zhong, Haitao Pan, Hongyu Miao (2021) <doi:10.48550/arXiv.2108.06568>.
--   Package `r pkg("BayesianMCPMod")` This package is an innovative method
-    that improves the traditional MCPMod by systematically incorporating historical data,
-    such as previous placebo group data. This R package offers functions for simulating,
+-   Package `r pkg("BayesianMCPMod")` implements Bayesian MCPMod (Fleischer et al. (2022) <doi:10.1002/pst.2193>),
+    a Bayesian method that improves the traditional MCPMod by systematically incorporating historical data,
+    such as previous placebo group data. The package offers functions for simulating,
     analyzing, and evaluating Bayesian MCPMod trials with normally distributed endpoints.
     It enables the assessment of trial designs incorporating historical data across various
     true dose-response relationships and sample sizes. Robust mixture prior distributions,
@@ -242,7 +242,8 @@ repository linked above.
     Resulting mixture posterior distributions are used in the Bayesian Multiple Comparison
     Procedure and modeling steps. The modeling step also includes a weighted model averaging
     approach (Pinheiro et al. (2014) <doi:10.1002/sim.6052>).
-    Estimated dose-response relationships can be bootstrapped and visualized.
+    Estimated dose-response relationships can be bootstrapped and visualized. The attainment
+    of a Minimally Efficacious Dose and Target Dose can be assessed.
 -   Package `r pkg("clinfun", priority = "core")` has
     functions for both design and analysis of clinical trials. For phase
     II trials, it has functions to calculate sample size, effect size,
