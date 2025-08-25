@@ -1,8 +1,8 @@
 ---
 name: ClinicalTrials
 topic: Clinical Trial Design, Monitoring, and Analysis
-maintainer: Ed Zhang
-email: ClinicalTrials.TaskView@yahoo.com
+maintainer: Vicky Wu, Ed Zhang
+email: wuqian7 at gmail.com
 version: 2025-04-08
 source: https://github.com/cran-task-views/ClinicalTrials/
 ---
