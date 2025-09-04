@@ -265,7 +265,7 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 - `r pkg("multcomp")` covers simultaneous tests and confidence intervals for general linear hypotheses in parametric models, including linear, generalized linear, linear mixed effects, and survival models.
 
-- Base R, especially the `r pkg("stats")` package, has a lot of functionality useful for design and analysis of clinical trials. For example, `chisq.test`, `prop.test`, `binom.test`, `t.test`, `wilcox.test`, `kruskal.test`, `mcnemar.test`, `cor.test`, `power.t.test`, `power.prop.test`, `power.anova.test`, `lm`, `glm`, `nls`, `anova` (and its `lm` and `glm` methods) among many others.
+- Base R, especially the `stats` package, has a lot of functionality useful for design and analysis of clinical trials. For example, `chisq.test`, `prop.test`, `binom.test`, `t.test`, `wilcox.test`, `kruskal.test`, `mcnemar.test`, `cor.test`, `power.t.test`, `power.prop.test`, `power.anova.test`, `lm`, `glm`, `nls`, `anova` (and its `lm` and `glm` methods) among many others.
     
 - `r pkg("TestDesign")` uses the optimal test design approach by Birnbaum (Addison-Wesley, ISBN 9781593119348, 1968) and van der Linden (2018) `r doi("10.1201/9781315117430")` to construct fixed, adaptive, and parallel tests. Supports the following mixed-integer programming (MIP) solver packages: `Rsymphony`, `gurobi`, `lpSolve`, and `Rglpk`. The `gurobi` package is not available from CRAN; see <https://www.gurobi.com/downloads/>.
     
