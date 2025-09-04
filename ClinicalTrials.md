@@ -261,8 +261,6 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 - `r pkg("logistf")` Firth's Bias-Reduced Logistic Regression. Firth's method was proposed as ideal solution to the problem of separation in logistic regression.
 
-- `r pkg("maic")` In MAIC, unbiased comparison between outcomes of two trials is facilitated by weighting the subject-level outcomes of one trial with weights derived such that the weighted aggregate measures of the prognostic or effect modifying variables are equal to those of the sample in the comparator trial.
-
 - `r pkg("multcomp")` covers simultaneous tests and confidence intervals for general linear hypotheses in parametric models, including linear, generalized linear, linear mixed effects, and survival models.
 
 - Base R, especially the `stats` package, has a lot of functionality useful for design and analysis of clinical trials. For example, `chisq.test`, `prop.test`, `binom.test`, `t.test`, `wilcox.test`, `kruskal.test`, `mcnemar.test`, `cor.test`, `power.t.test`, `power.prop.test`, `power.anova.test`, `lm`, `glm`, `nls`, `anova` (and its `lm` and `glm` methods) among many others.
@@ -318,8 +316,6 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 #### *Survival Analysis*
 
 This task view focuses on packages relevant to clinical trials. For a more comprehensive list of packages on this topic, please refer to the `r view("Survival")` task view.
-
-- `r pkg("ipcwswitch")` contains functions for formatting clinical trials data and implementing inverse probability of censoring weights to handle treatment switches when estimating causal treatment effect in randomized clinical trials.
 
 -  `r pkg("multcomp")`allows simultaneous inference on general linear hypotheses within a parametric model, such as a Cox proportional hazards model or a parametric survival model.
 
