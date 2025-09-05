@@ -102,6 +102,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 #### *Dose-Finding*
 
+- `r pkg("BayesianMCPMod")` implements a Bayesian extension of MCPMod based on Fleischer et al. (2022) `r doi("10.1002/pst.2193")`, enabling the systematic inclusion of historical data. It supports simulation, analysis, and evaluation of trial designs across varying dose-response relationships and sample sizes. Users can specify robust mixture priors (e.g., via the Meta-Analytic-Predictive approach), apply weighted model averaging, and assess Minimally Efficacious and Target Doses. Bootstrapped estimates and visualizations of dose-response relationships are also provided.
+
 - `r pkg("bcrm", priority = "core")` This package implements a wide variety of one and two-parameter Bayesian CRM designs. The program can run interactively, allowing the user to enter outcomes after each cohort has been recruited, or via simulation to assess operating characteristics.
 
 - `r pkg("crmPack")` Implements a wide range of model-based dose escalation designs, ranging from classical and modern continual reassessment methods (CRMs) based on dose-limiting toxicity endpoints to dual-endpoint designs taking into account a biomarker/efficacy outcome. The focus is on Bayesian inference, making it very easy to setup a new design with its own JAGS code.
@@ -111,7 +113,7 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 - `r pkg("DTAT")` Dose Titration Algorithm Tuning (DTAT) is a methodologic framework allowing dose individualization to be conceived as a continuous learning process that begins in early-phase clinical trials and continues throughout drug development, on into clinical practice. This package includes code that researchers may use to reproduce or extend key results of the DTAT research programme, plus tools for trialists to design and simulate a '3+3/PC' dose-finding study.
     
 - `r pkg("ewoc")` An implementation of a variety of escalation with overdose control designs introduced by Babb et al. (1998) `r doi("10.1002/(SICI)1097-0258(19980530)17:10%3C1103::AID-SIM793%3E3.0.CO;2-9")`. It calculates the next dose as a clinical trial proceeds as well as performs simulations to obtain operating characteristics.    
-    
+
 - `r pkg("OncoBayes2")` Bayesian Logistic Regression for Oncology Dose-Escalation Trials. It provides flexible functions for Bayesian meta-analytic modeling of the incidence of Dose Limiting Toxicities (DLTs) by dose level, under treatment regimes involving any number of combination partners.
 
 - `r pkg("UnifiedDoseFinding")` includes three dose finding designs: unified phase I design based on Ivanova et al. (2009) `r doi("10.1111/j.1541-0420.2008.01045.x")`), Quasi-CRM/Robust-Quasi-CRM based on Yuan et al. (2007) `r doi("10.1111/j.1541-0420.2006.00666.x")` and Pan et al. (2014) `r doi("10.1371/journal.pone.0098147")`, and generalized BOIN design based on Mu et al. (2018) `r doi("10.1111/rssc.12263")`.  The design goal can include finding the dose associated with a certain target toxicity rate, or the goal can be to find the dose with a certain weighted sum of rates of various toxicity grades, or to find the dose with a certain mean value of a continuous response.
@@ -122,7 +124,7 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 - `r pkg("escalation")` Implements a range of different approaches for dose-finding clinical trials including the continual reassessment method (CRM), the modified TPI (mTPI) design, the Bayesian optimal interval design (BOIN), EffTox and the 3+3 design.
 
-- `r pkg("MCPMod")` This package implements a methodology for the design and analysis of dose-response studies that combines aspects of multiple comparison procedures and modeling approaches based on Bretz et al. (2005) `r doi("10.1111/j.1541-0420.2005.00344.x")`. Please note: The 'MCPMod' package will not be further developed, all future development of the MCP-Mod methodology will be done in `r pkg("DoseFinding")`.
+- `r pkg("MCPMod")` This package implements a methodology for the design and analysis of dose-response studies that combines aspects of multiple comparison procedures and modeling approaches based on Bretz et al. (2005) `r doi("10.1111/j.1541-0420.2005.00344.x")`. Please note: The `MCPMod` package will not be further developed, all future development of the MCP-Mod methodology will be done in `r pkg("DoseFinding")`.
     
 - `r pkg("TEQR", priority = "core")` The TEQR package contains software to calculate the operating characteristics for the TEQR and the ACT designs.  The TEQR (toxicity equivalence range) design is a toxicity based cumulative cohort design with added safety rules; the ACT (Activity constrained for toxicity) design is also a cumulative cohort design with additional safety rules with the unique feature of this design is that dose is escalated based on lack of activity rather than on lack of toxicity and is de-escalated only if an unacceptable level of toxicity is experienced.
     
@@ -146,17 +148,29 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 #### *Group Sequential Designs*
     
+- `r pkg("BinGSD")` supports the computation of boundaries and conditional power for single-arm group sequential test with binary endpoint, via either asymptotic or exact test. The package also provides functions to obtain boundary crossing probabilities given the design.   
+    
 - `r pkg("clinfun", priority = "core")` has functions for both design and analysis of clinical trials. For phase II trials, it has functions to calculate sample size, effect size, and power based on Fisher's exact test, the operating characteristics of a two-stage boundary, Optimal and Minimax 2-stage Phase II designs given by Richard Simon, the exact 1-stage Phase II design and can compute a stopping rule and its operating characteristics for toxicity monitoring based repeated significance testing; and can calculate sample size for Phase III group sequential designs.    
     
 - `r pkg("GroupSeq")` computes probabilities related to group sequential designs for normally distributed test statistics. Enables to derive critical boundaries, power, drift, and confidence intervals of such designs. Supports the alpha spending approach by Lan-DeMets (1994) `r doi("10.1002/sim.4780131308")`.
 
+- `r pkg("grpseq")` supports the design of group sequential trials, including non-binding futility analysis at multiple time points, based on Gallo et al. (2014) `r doi("10.1080/10543406.2014.932285")`.
+
+- `r pkg("gscounts")` supports the design and analysis of group sequential designs for negative binomial outcomes, as described by Mütze et al. (2018) `r doi("10.1177/0962280218773115")`.
+
 - `r pkg("gsDesign")` derives group sequential clinical trial designs and describes their properties. Particular focus on time-to-event, binary, and continuous outcomes. Largely based on methods described in the book *Group Sequential Methods with Applications to Clinical Trials* by Jennison et al. (Chapman & Hall/CRC, ISBN 0-8493-0316-8, 2000).
+
+- `r pkg("GSED")` provides function to apply "Group sequential enrichment design incorporating subgroup selection" (GSED) method proposed by Magnusson and Turnbull (2013) `r doi("10.1002/sim.5738")`.
+
+- `r pkg("gsrsb")` implements a gate-keeping procedure to test a primary and a secondary endpoint in a group sequential design with multiple interim looks, including refined secondary boundaries for a gate-keeping test. It supports computations for both standard boundaries and boundaries using error spending functions. See Tamhane et al. (2018) `r doi("10.1111/biom.12732")` for details.
 
 - `r pkg("ldbounds", priority = "core")` uses Lan-DeMets Method for group sequential trial; its functions calculate bounds and probabilities of a group sequential trial.
 
 - `r pkg("lrstat")` enables the design of adaptive group sequential trials, allowing flexibility in sample size adjustments, error spending functions, and the number and timing of interim analyses. It also supports a range of methods for adjusted p-values, including graphical approaches and gatekeeping procedures.
 
 - `r pkg("rpact", priority = "core")` is a comprehensive validated R package for clinical research which enables the design and analysis of confirmatory adaptive group sequential designs with continuous, binary, and survival endpoints.
+
+- `r pkg("SurrogateSeq")` provides functions to implement group sequential procedures that allow for early stopping to declare efficacy using a surrogate marker and the possibility of futility stopping. More details are available in Parast and Bartroff (2024) `r doi("10.1093/biomtc/ujae108")`.
 
 
 #### *Randomization*
@@ -198,6 +212,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 - `r pkg("longpower", priority = "core")`Compute power and sample size for linear models of longitudinal data. Supported models include mixed-effects models and models fit by generalized least squares and generalized estimating equations. The package is described in Iddi and Donohue (2022) `r doi("10.32614/RJ-2022-022")`. 
     
 - `r pkg("lrstat")` performs power and sample size calculation for non-proportional hazards model using the Fleming-Harrington family of weighted log-rank tests.
+
+- `r pkg("pmvalsampsize")` computes the minimum sample size required for the external validation of an existing multivariable prediction model using the criteria proposed by Archer (2020) `r doi("10.1002/sim.8766")` and Riley (2021) `r doi("10.1002/sim.9025")`.
     
 - `r pkg("PowerTOST", priority = "core")` contains functions to calculate power and sample size for various study designs used in bioequivalence studies. Power and sample size can be obtained based on different methods, amongst them prominently the TOST procedure (two one-sided t-tests).
     
@@ -317,9 +333,11 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 
 This task view focuses on packages relevant to clinical trials. For a more comprehensive list of packages on this topic, please refer to the `r view("Survival")` task view.
 
--  `r pkg("multcomp")`allows simultaneous inference on general linear hypotheses within a parametric model, such as a Cox proportional hazards model or a parametric survival model.
+-  `r pkg("maxcombo")` provides functions for comparing survival curves using the max-combo test at a single timepoint or repeatedly at successive respective timepoints while controlling type I error, as published by Prior (2020) `r doi("10.1177/0962280220931560")`.
 
-- `r pkg("nphRCT")` Non-Proportional Hazards in Randomized Controlled Trials. Perform a stratified weighted log-rank test in a randomized controlled trial.
+-  `r pkg("multcomp")` allows simultaneous inference on general linear hypotheses within a parametric model, such as a Cox proportional hazards model or a parametric survival model.
+
+- `r pkg("nphRCT")` performs a stratified weighted log-rank test in a randomized controlled trial. Tests can be visualized as a difference in average score on the two treatment arms.
 
 - `r pkg("rpsftm")` provides functions to fit a rank preserving structural failure time model to a two-arm clinical trial with survival outcomes.
     
@@ -357,6 +375,7 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 
 - `r pkg("seqmon")` provides sequential monitoring of clinical trials. It calculates the efficacy and futility boundaries at each look. It allows modifying the design and tracking the design update history.
 
+- `r pkg("tLagInterim")` supports interim monitoring in clinical trials with time-lagged outcomes, It implements inverse and augmented inverse probability weighted estimators for common treatment effect parameters at an interim analysis with time-lagged outcome that may not be available for all enrolled subjects. See Tsiatis and Davidian (2022) `r doi("10.1002/sim.9580")` for details.
 
 ### Links
 - [Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)](https://www.R-project.org/doc/R-FDA.pdf)
