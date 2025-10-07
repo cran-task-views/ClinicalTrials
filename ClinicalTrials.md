@@ -10,7 +10,7 @@ source: https://github.com/cran-task-views/ClinicalTrials/
 
 ### Get Started
 
-This task view provides an overview of R packages relevant to the design, monitoring, and analysis of clinical trial data. 
+This task view provides an overview of R packages relevant to the design, monitoring, analysis and reporting of clinical trial data. 
 
 Packages are grouped in the following categories:
 
@@ -19,6 +19,9 @@ Packages are grouped in the following categories:
 - [**Monitoring**](#monitoring): tools dedicated to monitoring of clinical trials, such as computing the probability of crossing sequential boundaries along its interim analyses, sample size re-estimation, etc.
 
 - [**Analysis**](#analysis): tools for implementing commonly used analysis method in clinical trials. The packages are further categorized into subgroups, such as [*general analysis*](#general-analysis), [*longitudinal data analysis*](#longitudinal-data-analysis), [*survival analysis*](#survival-analysis), [*meta-analysis*](#meta-analysis), [*missing data imputation*](#missing-data-imputation), as well as [*analysis for specific designs*](#other-analysis-for-specific-designs).
+
+- [**Reporting**](#reporting): tools to facilitate the reporting of clinical trial results.
+
 
 Here are several foundational books on clinical trial design and analysis that can help users gain a deeper understanding of the methods implemented in the relevant R packages: 
 
@@ -380,6 +383,10 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 - `r pkg("seqmon")` provides sequential monitoring of clinical trials. It calculates the efficacy and futility boundaries at each look. It allows modifying the design and tracking the design update history.
 
 - `r pkg("tLagInterim")` supports interim monitoring in clinical trials with time-lagged outcomes, It implements inverse and augmented inverse probability weighted estimators for common treatment effect parameters at an interim analysis with time-lagged outcome that may not be available for all enrolled subjects. See Tsiatis and Davidian (2022) `r doi("10.1002/sim.9580")` for details.
+
+### Reporting
+
+- `r pkg("consort")` creates CONSORT diagrams for randomized clinical trials using standardized disposition data, with optional custom text labels for nodes.
 
 ### Links
 - [Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)](https://www.R-project.org/doc/R-FDA.pdf)
