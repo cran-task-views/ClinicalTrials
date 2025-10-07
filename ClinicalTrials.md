@@ -210,6 +210,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 - `r pkg("cosa")` Implements bound constrained optimal sample allocation (BCOSA) framework described in Bulus & Dong (2019) for power analysis of multilevel regression discontinuity designs (MRDDs) and multilevel randomized trials (MRTs) with continuous outcomes. Separate tools for statistical power and minimum detectable effect size computations are provided.
     
 - `r pkg("longpower", priority = "core")`Compute power and sample size for linear models of longitudinal data. Supported models include mixed-effects models and models fit by generalized least squares and generalized estimating equations. The package is described in Iddi and Donohue (2022) `r doi("10.32614/RJ-2022-022")`. 
+
+- `r pkg("MKpower")` performs power and sample size calculations for various tests, including Welch and Hsu t-tests (via Monte Carlo simulation), Wilcoxon rank sum and signed rank tests, diagnostic test evaluation, single proportion tests, comparison of negative binomial rates, ANCOVA, reference ranges, multiple primary endpoints, and AUC.
     
 - `r pkg("lrstat")` performs power and sample size calculation for non-proportional hazards model using the Fleming-Harrington family of weighted log-rank tests.
 
