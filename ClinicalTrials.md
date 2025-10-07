@@ -388,5 +388,17 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 
 - `r pkg("consort")` creates CONSORT diagrams for randomized clinical trials using standardized disposition data, with optional custom text labels for nodes.
 
+- `r pkg("gridify")` is a simple, flexible tool for creating enriched figures and tables by adding surrounding text using predefined or custom layouts. Supports any input convertible to a `grob` (e.g., `ggplot`, `gt`, `flextable`) and is built on R's `grid` graphics system. For details, see Murrell (2018) `r doi("10.1201/9780429422768")`.
+
+- `r pkg("junco")` provides additional tools to enhance `rtables`, `rlistings`, and `tern` for generating tables and listings. It offers general-purpose features like extended statistical analyses, a production-ready RTF exporter, support for spanning headers and risk difference columns, and font-aware auto column width adjustment.
+
+- `r pkg("rlistings")` provides a framework for formatting large datasets, with features tailored for listings commonly included in clinical trial submissions for regulatory review.
+
+- `r pkg("rtables")` provides a framework for defining and applying complex, multi-level tabulations using a hierarchical, tree-like structure. It supports flexible row and column splits, multi-value cells, contextual summaries, and a pipe-friendly interface for layout and computation.
+
+- `r pkg("tern")` creates tables, listings, and graphs (TLG) library for common outputs used in clinical trials.
+
+- `r pkg("tidytlg")` generates tables, listings, and graphs (TLG) using `tidyverse`, supporting both functional workflows and metadata-driven summaries. It can also integrate with the `envsetup` package for environment setup..
+
 ### Links
 - [Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)](https://www.R-project.org/doc/R-FDA.pdf)
