@@ -1,6 +1,6 @@
 ---
 name: ClinicalTrials
-topic: Clinical Trial Design, Monitoring, and Analysis
+topic: Clinical Trial Design, Monitoring, Analysis and Reporting
 maintainer: Ya Wang, Thomas Jaki, Laura Pascasio Harris, Orla Doyle, Elias Laurin Meyer, Wilmar Igl
 email: ya.wang10@gilead.com
 version: 2026-02-11
