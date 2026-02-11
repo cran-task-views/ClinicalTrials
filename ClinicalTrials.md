@@ -10,7 +10,7 @@ source: https://github.com/cran-task-views/ClinicalTrials/
 
 ### Get Started
 
-This task view provides an overview of R packages relevant to the design, monitoring, and analysis of clinical trial data. 
+This task view provides an overview of R packages relevant to the design, monitoring, analysis and reporting of clinical trial data. 
 
 Packages are grouped in the following categories:
 
@@ -19,6 +19,9 @@ Packages are grouped in the following categories:
 - [**Monitoring**](#monitoring): tools dedicated to monitoring of clinical trials, such as computing the probability of crossing sequential boundaries along its interim analyses, sample size re-estimation, etc.
 
 - [**Analysis**](#analysis): tools for implementing commonly used analysis method in clinical trials. The packages are further categorized into subgroups, such as [*general analysis*](#general-analysis), [*longitudinal data analysis*](#longitudinal-data-analysis), [*survival analysis*](#survival-analysis), [*meta-analysis*](#meta-analysis), [*missing data imputation*](#missing-data-imputation), as well as [*analysis for specific designs*](#other-analysis-for-specific-designs).
+
+- [**Reporting**](#reporting): tools to facilitate the reporting of clinical trial results.
+
 
 Here are several foundational books on clinical trial design and analysis that can help users gain a deeper understanding of the methods implemented in the relevant R packages: 
 
@@ -210,6 +213,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 - `r pkg("cosa")` Implements bound constrained optimal sample allocation (BCOSA) framework described in Bulus & Dong (2019) for power analysis of multilevel regression discontinuity designs (MRDDs) and multilevel randomized trials (MRTs) with continuous outcomes. Separate tools for statistical power and minimum detectable effect size computations are provided.
     
 - `r pkg("longpower", priority = "core")`Compute power and sample size for linear models of longitudinal data. Supported models include mixed-effects models and models fit by generalized least squares and generalized estimating equations. The package is described in Iddi and Donohue (2022) `r doi("10.32614/RJ-2022-022")`. 
+
+- `r pkg("MKpower")` performs power and sample size calculations for various tests, including Welch and Hsu t-tests (via Monte Carlo simulation), Wilcoxon rank sum and signed rank tests, diagnostic test evaluation, single proportion tests, comparison of negative binomial rates, ANCOVA, reference ranges, multiple primary endpoints, and AUC.
     
 - `r pkg("lrstat")` performs power and sample size calculation for non-proportional hazards model using the Fleming-Harrington family of weighted log-rank tests.
 
@@ -266,6 +271,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 ### Analysis
 
 #### *General Analysis*
+
+- `r pkg("clintrialX")` fetches clinical trial data from sources like [ClinicalTrials.gov](https://clinicaltrials.gov) and the [Clinical Trials Transformation Initiative - Access to Aggregate Content of ClinicalTrials.gov database](https://aact.ctti-clinicaltrials.org), with support for pagination, bulk downloads, and HTML report generation.
 
 - `r pkg("coin")` offers conditional inference procedures for the general independence problem including two-sample, K-sample (non-parametric ANOVA), correlation, censored, ordered and multivariate problems.
     
@@ -376,6 +383,22 @@ This task view focuses on packages relevant to clinical trials. For a more compr
 - `r pkg("seqmon")` provides sequential monitoring of clinical trials. It calculates the efficacy and futility boundaries at each look. It allows modifying the design and tracking the design update history.
 
 - `r pkg("tLagInterim")` supports interim monitoring in clinical trials with time-lagged outcomes, It implements inverse and augmented inverse probability weighted estimators for common treatment effect parameters at an interim analysis with time-lagged outcome that may not be available for all enrolled subjects. See Tsiatis and Davidian (2022) `r doi("10.1002/sim.9580")` for details.
+
+### Reporting
+
+- `r pkg("consort")` creates CONSORT diagrams for randomized clinical trials using standardized disposition data, with optional custom text labels for nodes.
+
+- `r pkg("gridify")` is a simple, flexible tool for creating enriched figures and tables by adding surrounding text using predefined or custom layouts. Supports any input convertible to a `grob` (e.g., `ggplot`, `gt`, `flextable`) and is built on R's `grid` graphics system. For details, see Murrell (2018) `r doi("10.1201/9780429422768")`.
+
+- `r pkg("junco")` provides additional tools to enhance `rtables`, `rlistings`, and `tern` for generating tables and listings. It offers general-purpose features like extended statistical analyses, a production-ready RTF exporter, support for spanning headers and risk difference columns, and font-aware auto column width adjustment.
+
+- `r pkg("rlistings")` provides a framework for formatting large datasets, with features tailored for listings commonly included in clinical trial submissions for regulatory review.
+
+- `r pkg("rtables")` provides a framework for defining and applying complex, multi-level tabulations using a hierarchical, tree-like structure. It supports flexible row and column splits, multi-value cells, contextual summaries, and a pipe-friendly interface for layout and computation.
+
+- `r pkg("tern")` creates tables, listings, and graphs (TLG) library for common outputs used in clinical trials.
+
+- `r pkg("tidytlg")` generates tables, listings, and graphs (TLG) using `tidyverse`, supporting both functional workflows and metadata-driven summaries. It can also integrate with the `envsetup` package for environment setup..
 
 ### Links
 - [Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)](https://www.R-project.org/doc/R-FDA.pdf)
