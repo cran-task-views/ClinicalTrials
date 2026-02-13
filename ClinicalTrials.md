@@ -272,7 +272,7 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 #### *General Analysis*
 
-- `r pkg("clintrialX")` fetches clinical trial data from sources like [ClinicalTrials.gov](https://clinicaltrials.gov) and the [Clinical Trials Transformation Initiative - Access to Aggregate Content of ClinicalTrials.gov database](https://aact.ctti-clinicaltrials.org), with support for pagination, bulk downloads, and HTML report generation.
+- `r pkg("clintrialx")` fetches clinical trial data from sources like [ClinicalTrials.gov](https://clinicaltrials.gov) and the [Clinical Trials Transformation Initiative - Access to Aggregate Content of ClinicalTrials.gov database](https://aact.ctti-clinicaltrials.org), with support for pagination, bulk downloads, and HTML report generation.
 
 - `r pkg("coin")` offers conditional inference procedures for the general independence problem including two-sample, K-sample (non-parametric ANOVA), correlation, censored, ordered and multivariate problems.
     
