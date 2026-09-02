@@ -77,6 +77,8 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 - `r pkg("gMCP")` provides functions and a graphical user interface for graphical described multiple test procedures. Examples of weighted tests that are available in gMCP are the weighted Bonferroni, parametric and Simes tests.
 
+- `r pkg("goldilocks")` simulates and evaluates Goldilocks adaptive clinical trial designs for one- and two-arm trials with time-to-event or fixed-time binary endpoints. It uses predictive probabilities to determine during accrual whether the current sample size is sufficient or further enrollment would be futile, and supports frequentist and Bayesian final analyses. See Broglio et al. (2014) `r doi("10.1080/10543406.2014.888569")`.
+
 - `r pkg("graphicalMCP")` is a low-dependency implementation of graphical MCPs which allow mixed types of tests. It also includes power simulations and visualization of graphical MCPs.
 
 - `r pkg("gsMAMS")` It provides functions to generate operating characteristics and to calculate Sequential Conditional Probability Ratio Tests(SCPRT) efficacy and futility boundary values along with sample/event size of Multi-Arm Multi-Stage(MAMS) trials for different outcomes. The package is based on Wu et al. (2023) `r doi("10.1002/sim.9682")`, Wu and Li (2023) `r doi(" 10.1002/sim.9682")`, and Wu et al. (2023) *Group Sequential Multi-Arm Multi-Stage Trial Design with Ordinal Endpoints* (In preparation). 
