@@ -1,9 +1,9 @@
 ---
 name: ClinicalTrials
 topic: Clinical Trial Design, Monitoring, Analysis and Reporting
-maintainer: Ya Wang, Thomas Jaki, Laura Pascasio Harris, Orla Doyle, Elias Laurin Meyer, Wilmar Igl
+maintainer: Ya Wang, Thomas Jaki, Laura Pascasio Harris, Elias Laurin Meyer, Wilmar Igl, Nan Chen
 email: ya.wang10@gilead.com
-version: 2026-06-10
+version: 2026-09-02
 source: https://github.com/cran-task-views/ClinicalTrials/
 ---
 
@@ -65,8 +65,6 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 
 - `r pkg("ASSISTant")` Clinical trial design for subgroup selection in three-stage group sequential trial as described in Lai et al. (2014) `r doi("10.1016/j.cct.2014.09.001")`. It includes facilities for design, exploration and analysis of such trials.
 
-- `r pkg("BDP2")` Tools and workflow to choose design parameters in Bayesian adaptive single-arm phase II trial designs with binary endpoint (response, success) with possible stopping for efficacy and futility at interim analyses; and also contains routines to determine and visualize operating characteristics. See Kopp-Schneider et al. (2018) `r doi("10.1002/bimj.201700209")`. 
-
 - `r pkg("cats")` simulates a cohort platform trial design whereby every cohort consists of two arms (control and experimental treatment). Endpoints are co-primary binary endpoints and decisions are made using either Bayesian or frequentist decision rules; and realistic trial trajectories are simulated with the operating characteristics of the designs calculated.
 
 - `r pkg("CohortPlat")` is a collection of functions dedicated to simulating staggered entry platform trials whereby the treatment under investigation is a combination of two active compounds. A more detailed description of the design can be found in Meyer et al. `r doi("10.1002/pst.2194")` and a manual in Meyer et al. `r doi("10.48550/arXiv.2202.02182")`.
@@ -82,8 +80,6 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 - `r pkg("graphicalMCP")` is a low-dependency implementation of graphical MCPs which allow mixed types of tests. It also includes power simulations and visualization of graphical MCPs.
 
 - `r pkg("gsMAMS")` It provides functions to generate operating characteristics and to calculate Sequential Conditional Probability Ratio Tests(SCPRT) efficacy and futility boundary values along with sample/event size of Multi-Arm Multi-Stage(MAMS) trials for different outcomes. The package is based on Wu et al. (2023) `r doi("10.1002/sim.9682")`, Wu and Li (2023) `r doi(" 10.1002/sim.9682")`, and Wu et al. (2023) *Group Sequential Multi-Arm Multi-Stage Trial Design with Ordinal Endpoints* (In preparation). 
-
-- `r pkg("MABOUST")` conducts and simulates the MABOUST design, including making interim decisions to stop a treatment for inferiority or stop the trial early for superiority or equivalency.
 
 - `r pkg("MAMS")` designs multi-arm multi-stage studies with (asymptotically) normal endpoints and known variance. It could be used to determine the boundaries of a multi-arm multi-stage study for a given boundary shape and finds the required number of subjects, as well as simulates multi-arm multi-stage designs and estimates power and expected sample size. 
 
@@ -112,8 +108,6 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 #### *Dose-Finding*
 
 - `r pkg("BayesianMCPMod")` implements a Bayesian extension of MCPMod based on Fleischer et al. (2022) `r doi("10.1002/pst.2193")`, enabling the systematic inclusion of historical data. It supports simulation, analysis, and evaluation of trial designs across varying dose-response relationships and sample sizes. Users can specify robust mixture priors (e.g., via the Meta-Analytic-Predictive approach), apply weighted model averaging, and assess Minimally Efficacious and Target Doses. Bootstrapped estimates and visualizations of dose-response relationships are also provided.
-
-- `r pkg("bcrm", priority = "core")` This package implements a wide variety of one and two-parameter Bayesian CRM designs. The program can run interactively, allowing the user to enter outcomes after each cohort has been recruited, or via simulation to assess operating characteristics.
 
 - `r pkg("crmPack")` Implements a wide range of model-based dose escalation designs, ranging from classical and modern continual reassessment methods (CRMs) based on dose-limiting toxicity endpoints to dual-endpoint designs taking into account a biomarker/efficacy outcome. The focus is on Bayesian inference, making it very easy to setup a new design with its own JAGS code.
     
@@ -254,8 +248,6 @@ Contributions are always welcome and encouraged. You can contribute by emailing 
 - `r pkg("asd", priority = "core")` provides functions to simulate adaptive seamless designs that either (i) compare multiple experimental treatments against a single control group, or (ii) evaluate a single experimental treatment versus a control with co-primary analyses in both a predefined subgroup and the full population.
 
 - `r pkg("basksim")` provides a unified syntax for the simulation-based comparison of different single-stage basket trial designs with a binary endpoint and equal sample sizes in all baskets. Methods include the designs by Baumann et al. (2025) `r doi("10.1080/19466315.2024.2402275")`, Schmitt and Baumann (2025) `r doi("10.1080/19466315.2025.2486231")`, Fujikawa et al. (2020) `r doi("10.1002/bimj.201800404")`, Berry et al. (2020) `r doi("10.1177/1740774513497539")`, and Neuenschwander et al. (2016) `r doi("10.1002/pst.1730")`. For the latter two designs, the functions are mostly wrappers for functions provided by the package `bhmbasket`.
-
-- `r pkg("bcrm", priority = "core")` allows users to Simulate multiple trial scenarios to assess operating characteristics and evaluate different Bayesian CRM designs.
 
 - `r pkg("bhmbasket")` provides functions to evaluate basket trial designs with binary endpoints using simulation and Bayesian hierarchical models to assess Go/No-go decisions. Supports flexible trial configurations and implements models from Berry et al. (2013) `r doi("10.1177/1740774513497539")` and Neuenschwander et al. (2016) `r doi("10.1002/pst.1730")`. 
     
@@ -402,6 +394,8 @@ This task view focuses on packages relevant to clinical trials in general. For a
 
 - `r pkg("consort")` creates CONSORT diagrams for randomized clinical trials using standardized disposition data, with optional custom text labels for nodes.
 
+- `r pkg("crosstable")` creates descriptive tables for continuous and categorical variables, with optional grouping, statistical tests, effect sizes, and export to common reporting formats such as `flextable` and `gt`.
+
 - `r pkg("gridify")` is a simple, flexible tool for creating enriched figures and tables by adding surrounding text using predefined or custom layouts. Supports any input convertible to a `grob` (e.g., `ggplot`, `gt`, `flextable`) and is built on R's `grid` graphics system. For details, see Murrell (2018) `r doi("10.1201/9780429422768")`.
 
 - `r pkg("junco")` provides additional tools to enhance `rtables`, `rlistings`, and `tern` for generating tables and listings. It offers general-purpose features like extended statistical analyses, a production-ready RTF exporter, support for spanning headers and risk difference columns, and font-aware auto column width adjustment.
@@ -412,7 +406,12 @@ This task view focuses on packages relevant to clinical trials in general. For a
 
 - `r pkg("tern")` creates tables, listings, and graphs (TLG) library for common outputs used in clinical trials.
 
-- `r pkg("tidytlg")` generates tables, listings, and graphs (TLG) using `tidyverse`, supporting both functional workflows and metadata-driven summaries. It can also integrate with the `envsetup` package for environment setup..
+- `r pkg("tidytlg")` generates tables, listings, and graphs (TLG) using `tidyverse`, supporting both functional workflows and metadata-driven summaries. It can also integrate with the `envsetup` package for environment setup.
 
 ### Links
 - [Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)](https://www.R-project.org/doc/R-FDA.pdf)
+
+
+### Acknowledgments
+
+We acknowledge the former co-maintainers, Orla Doyle, for their significant contributions to the development and maintenance of this Task View. Their efforts were instrumental in building and enhancing this resource, and we are grateful for their service to the community.

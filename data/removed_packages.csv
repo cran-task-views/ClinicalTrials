@@ -1,9 +1,10 @@
-﻿Package Name,Date Removed,Reason
-ipcwswitch,2025-09-04,Archived on 2025-07-01 as issues were not corrected in time.
-maic,2025-09-04,Archived on 2025-07-22 as email to the maintainer is undeliverable.
-nppbib,2026-06-10,Archived on 2026-03-18 as issues were not corrected despite reminders.
-PowerUpR,2026-06-10,Archived on 2026-03-18 as issues were not corrected despite reminders.
-,,
-bcrm,,Archived on 2026-05-08 as email to the maintainer is undeliverable.
-BDP2,,Archived on 2026-05-04 as email to the maintainer is undeliverable.
-MABOUST,,Archived on 2026-05-06 as email to the maintainer is undeliverable.
+﻿Package Name,Category,Date Removed,Reason
+ipcwswitch,Survival Analysis,9/4/25,Archived on 2025-07-01 as issues were not corrected in time.
+maic,General Analysis,9/4/25,Archived on 2025-07-22 as email to the maintainer is undeliverable.
+nppbib,Other Analysis for Specific Designs,6/10/26,Archived on 2026-03-18 as issues were not corrected despite reminders.
+PowerUpR,Sample Size and Power Calculations,6/10/26,Archived on 2026-03-18 as issues were not corrected despite reminders.
+bcrm,"Dose-Finding, Simulation",9/2/26,Archived on 2026-05-08 as email to the maintainer is undeliverable.
+BDP2,Adaptive Designs,9/2/26,Archived on 2026-05-04 as email to the maintainer is undeliverable.
+MABOUST,Adaptive Designs,9/2/26,Archived on 2026-05-06 as email to the maintainer is undeliverable.
+,,,
+carat,,,Archived on 2026-08-21 as email to the maintainer is undeliverable.
