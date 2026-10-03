@@ -3,7 +3,7 @@ name: ClinicalTrials
 topic: Clinical Trial Design, Monitoring, Analysis and Reporting
 maintainer: Ya Wang, Thomas Jaki, Laura Pascasio Harris, Elias Laurin Meyer, Wilmar Igl, Nan Chen
 email: ya.wang10@gilead.com
-version: 2026-09-02
+version: 2026-10-02
 source: https://github.com/cran-task-views/ClinicalTrials/
 ---
 
@@ -411,7 +411,7 @@ This task view focuses on packages relevant to clinical trials in general. For a
 - `r pkg("tidytlg")` generates tables, listings, and graphs (TLG) using `tidyverse`, supporting both functional workflows and metadata-driven summaries. It can also integrate with the `envsetup` package for environment setup.
 
 ### Links
-- [Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)](https://www.R-project.org/doc/R-FDA.pdf)
+- [Regulatory Compliance and Validation Issues (A Guidance Document for the Use of R in Regulated Clinical Trial Environments)](https://www.R-project.org/doc/R-FDA.pdf).
 
 
 ### Acknowledgments
